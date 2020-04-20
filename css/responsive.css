@@ -324,3 +324,17 @@
     }
   /*menu screen*/
 }
+
+/*mac-aamir*/
+  @media screen and (min-width: 1700px) and (min-height: 962px){
+    .landing_screen .page_chairman .cont_left img{
+      height: 50%;
+    }
+
+    .page_chairman .cont_left p {
+      top: 60px;
+      font-size: 18px;
+      line-height: 29px;
+    }
+  }
+/*mac-aamir*/
