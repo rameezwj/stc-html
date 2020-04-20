@@ -1,0 +1,326 @@
+/*for larger screens*/
+  @media only screen and (min-width: 1600px){
+    
+  }
+/*for larger screens*/
+
+/*for mobile screens*/
+  @media only screen and (max-width: 1150px){
+ 
+  }
+  @media only screen and (min-width: 440px) and (max-width: 1150px){
+  }
+
+  @media only screen and (min-width: 550px) and (max-width: 1150px){
+  }
+
+  @media only screen and (min-width: 1151px) and (max-width: 1250px){
+  }
+/*for mobile screens*/
+
+@media screen and (min-height: 777px) and (max-height: 1200px) {
+
+  /*short menu*/
+    .short_menu {
+      width: calc( 70px * 6);
+      height: 70px;
+    }
+
+    .short_menu ul li a{
+      width: 70px;
+      height: 70px;
+    }
+  /*short menu*/
+
+  /*landing screen*/
+    .report_title p {
+      font-size: 55px;
+      line-height: 70px;
+    }
+    .logo_stc {
+      width: 180px;
+      bottom: 80px;
+      left: 80px;
+    }
+  /*landing screen*/
+
+  .menu_screen_wrapper .swiper-container{
+    height: 500px;
+  }
+  .boxes_1 {
+      transform: scale(1.1);
+      transform-origin: bottom left;
+  }
+  .screenContent1{
+    top: 50px;
+  }
+  .landingH1 {
+    font-size: 50px;
+  }
+  .report_title{
+    margin-bottom: 100px;
+  }
+  .landing_bar_1{
+    margin-bottom: 50px;
+  }
+  .page_chairman .cont_left .screentop_para,
+  .page_financials .cont_left .screentop_para,
+  .page_activities .cont_left .screentop_para {
+    margin: 100px 50px 50px 0;
+  }
+
+  /*chariman*/
+    .page_chairman .cont_left p{
+      top: 25px;
+      font-size: 25px;
+      line-height: 40px;
+    }
+    .page_chairman .cont_left img {
+      /*width: 600px;*/
+    }
+    .page_chairman .cont_right .cont_right_inner {
+      /*bottom: 150px;*/
+      bottom: 0;
+    }
+    .page_chairman .charimans_numbers {
+      top: 100px;
+    }
+    .page_chairman .text_high_content {
+        padding-top: 350px;
+    }
+    .page_chairman .charimans_numbers .ch_num_right{
+      padding: 40px 20px;
+    }
+  /*chariman*/
+
+  /*ceo*/
+    .page_ceo .cont_left p{
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .page_ceo .ceo_numbers {
+      top: 100px;
+      width: 550px;
+    }
+    .page_ceo .ceo_numbers .ch_num_right span {
+      font-size: 70px;
+    }
+    .page_ceo .ceo_numbers .ch_num_right p {
+      color: #fff;
+      font-size: 23px;
+      line-height: 30px;
+    }
+    .page_ceo .ceo_numbers .ch_num_left {
+      padding: 50px 20px;
+    }
+    .ceo_numbers .ch_num_left p {
+      font-size: 15px;
+      line-height: 25px;
+    }
+    .page_ceo .cont_left p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .page_ceo .text_high_content{
+      padding-top: 350px;
+    }
+    .page_ceo .cont_left img{
+      width: 50%;
+    }
+    .page_ceo .cont_left .ceo_bx1 {
+      width: 275px;
+      height: 175px;
+      top: 275px;;
+    }
+    .page_ceo .cont_left .ceo_bx2 {
+      width: 350px;
+      height: 300px;
+      top: 450px;
+      left: 275px;
+    }
+  /*ceo*/
+
+  .page_financials .cont_left p.footer {
+    bottom: 50px;
+    font-size: 15px;
+    line-height: 25px;
+    width: 70%;
+  }
+  .page_financials .cont_left p.footer span{
+    /*display: block;*/
+  }
+  .page_financials .cont_right > p{
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    font-size: 13px;
+    line-height: 25px;
+    text-align: right;
+    font-weight: bold;
+    width: 70%;
+    margin: 0;
+  }
+  .horizontal_fBox.snipit {
+    margin-bottom: 25px;
+    margin-left: 100px;
+    width: 460px;
+    height: 100px;
+  }
+
+  /*activities*/
+    .page_activities .monstr_hd_wrapper {
+      margin-top: 105px;
+      height: 200px;
+    }
+    .monstr_hd_wrapper h1 {
+      font-size: 150px;
+      line-height: 170px;
+    }
+    .page_activities .cont_left p {
+      width: 35%;
+      font-size: 20px;
+      line-height: 35px;
+    }
+    .page_activities .cont_left img {
+      height: 40%;
+    }
+  /*activities*/
+
+  .page_whoweare .cont_left .content_para{
+    font-size: 35px; line-height: 45px;
+  }
+  .page_mission .cont_right .mv_content_wrap p{ font-size: 35px; line-height: 45px;
+  }
+  .page_mission .cont_left .content_para{
+    font-size: 50px; line-height: 60px;
+  }
+  .page_mission .cont_left .media_content{
+    width: 500px; height: 400px;
+  }
+  
+  /*menu screen*/
+    .menu_screen_wrapper .menu_items {
+      right: calc( 25% - 125px);
+    }
+  /*menu screen*/
+
+  /*values*/
+    .value_item{
+      padding: 40px 40px;
+    }
+  /*values*/
+
+  /*consolidated financial*/
+    .financials_pdfs_wrapper a{
+      padding: 19px 30px;
+    }
+    .financials_pdfs_wrapper a b{
+      width: 60px;
+    }
+    .page_consolidate_financials .horizontal_fBox.snipit{
+      margin-top: 200px !important;
+      margin-right: 200px !important;
+    }
+    .page_consolidate_financials .ch_num{
+      /*margin-top: 150px;*/
+    }
+    .page_creation_bod_conclusion .cont_right .content_para{
+      font-size: 22px;
+      line-height: 44px;
+    }
+    .page_creation_bod_conclusion .cont_left .content_para{
+      /*font-size: 22px;*/
+      line-height: 35px;
+    }
+  /*consolidated financial*/
+
+  /*strategy*/
+    .page_strategy .cont_left p{
+      font-size: 17px;
+      line-height: 38px;
+      width: calc( 100% - 200px );
+    }
+    .page_strategy .cont_left .content_para_big{
+      font-size: 24px;
+      line-height: 45px;
+    }
+    .page_strategy .cont_right .text_high_content p{
+      line-height: 30px;
+      font-size: 16px;
+    }
+  /*strategy*/
+
+  /*serving pilgrims*/
+    .page_serving_pilgrams .cont_left p{
+      margin-top: 50px;
+      font-size: 17px;
+      line-height: 33px;
+    }
+    .page_inner .content_para {
+      line-height: 30px;
+      font-size: 16px;
+    }
+  /*serving pilgrims*/
+
+  /*content para for inner pages*/
+    .page_inner .content_para{
+      font-family: "stc_light";
+    }
+  /*content para for inner pages*/
+
+  /* financial highlights*/
+    .page_highlights .s1{
+      top: 150px;
+    }
+    .page_highlights .s2{
+      width: 75%:;
+    }
+  /* financial highlights*/
+}
+
+@media screen and (max-width: 1500px) and (min-height: 777px){
+  /*activities*/
+    .page_activities .monstr_hd_wrapper {
+        margin-top: 50px;
+        height: 175px;
+    }
+
+    .monstr_hd_wrapper h1 {
+        font-size: 115px;
+        line-height: 135px;
+    }
+    .page_activities .cont_left p {
+      width: 35%;
+      font-size: 15px;
+      line-height: 25px;
+    }
+    .page_activities .cont_left img {
+        height: 35%;
+    }
+  /*activities*/
+
+  /*chairman*/
+  .page_chairman .cont_left p {
+      top: 25px;
+      font-size: 14px;
+      line-height: 25px;
+  }
+  /*chairman*/
+
+  /*ceo*/
+    .page_ceo .cont_left p {
+        font-size: 14px;
+        line-height: 25px;
+        width: 40%;
+    }
+  /*ceo*/
+
+  /*menu screen*/
+    .menu_screen_wrapper .swiper-container {
+        height: 400px;
+    }
+    .menu_screen_wrapper .menu_items div a{
+      font-size: 40px;
+    }
+  /*menu screen*/
+}
