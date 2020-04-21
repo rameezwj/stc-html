@@ -326,7 +326,7 @@
 }
 
 /*mac-aamir*/
-  @media screen and (min-width: 1700px) and (min-height: 962px){
+  @media screen and (min-width: 1700px) and (min-height: 900px){
     .landing_screen .page_chairman .cont_left img{
       height: 50%;
     }
@@ -338,3 +338,630 @@
     }
   }
 /*mac-aamir*/
+
+
+@media only screen and (max-width: 1024px){
+    .h1 {
+      font-size: 35px !important;
+      line-height: 45px !important;
+    }
+    .screentop_para {
+      margin: 100px 5% 30px 0 !important;
+    }
+
+    /*cons. finan*/
+      .page_consolidate_financials .cont_right,
+      .page_consolidate_financials .cont_left{
+        width: 100%;
+        float: left;
+        height: auto;
+      }
+      .page_consolidate_financials .snip_row {
+          width: 90%;
+          margin: 0 auto;
+          float: none;
+      }
+
+      .page_consolidate_financials .snip_row .snip_txt {
+          transform: unset;
+          float: left;
+          position: relative;
+          margin: 0;
+          margin-left: 0;
+      }
+
+      .page_consolidate_financials .snip_row .snip_price {
+          width: 100%;
+      }
+
+      .page_consolidate_financials .snip_row .snip_table {
+          transform: unset;
+          width: 100%;
+          margin: 20px 0 0 0;
+      }
+      .page_consolidate_financials .ch_num {
+        width: 90%;
+        margin: 20px 5% 0 0;
+        display: block;
+        float: right;
+      }
+      .page_consolidate_financials .ch_num span{
+        font-size: 30px;
+      }
+      .page_consolidate_financials .financials_pdfs_wrapper{
+        position: relative;
+        width: 90%;
+        height: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        max-width: 400px;
+        bottom: 0;
+        transform: unset;
+        margin: 0 auto;
+      }
+      .page_consolidate_financials .financials_pdfs_wrapper > div{
+        display: block;
+        margin: 0 0 20px 0;
+      }
+      .page_consolidate_financials .financials_pdfs_wrapper > div > div{
+        width: 100%;
+        float: none;
+      }
+      .page_consolidate_financials .financials_pdfs_wrapper a{
+        width: 100%;
+        float: none;
+      }
+      .page_consolidate_financials .financials_pdfs_wrapper > div:empty{
+          display: none;
+      }
+    /*cons. finan*/
+
+    /*strategy*/
+      .page_strategy .cont_left {
+          float: none;
+          width: 100%;
+          height: auto;
+          position: relative;
+          top: auto;
+          left: auto;
+          right: auto;
+          bottom: auto;
+      }
+      .page_strategy .cont_left p {
+          width: 90%;
+          margin: 0 auto;
+          float: none;
+          position: relative;
+          top: auto;
+          right: auto;
+          left: auto;
+          bottom: auto;
+          font-size: 17px;
+          line-height: 27px;
+      }
+
+      .page_strategy .cont_left .content_para_big {
+          width: 90%;
+          margin: 50px auto;
+      }
+
+      .page_strategy .cont_right {
+          width: 100%;
+          float: none;
+          position: relative;
+          top: auto;
+          left: auto;
+          right: auto;
+          padding-bottom: 100px;
+          bottom: auto;
+      }
+
+      .page_strategy .cont_right .text_high_content {
+          padding: 0;
+          width: 90%;
+          margin: 0 auto;
+      }
+
+      .page_strategy .cont_right .text_high_content p {
+          width: 100%;
+          padding: 0;
+          font-size: 15px;
+          line-height: 27px;
+          font-family: 'stc_light';
+      }
+    /*strategy*/
+
+    /*who we are*/
+      .page_whoweare .cont_right {
+        width: 100%;
+        float: none;
+        position: relative;
+        top: auto;
+        height: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+      }
+
+      .page_whoweare .cont_left {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        order: 1;
+        left: auto;
+        padding-bottom: 50px;
+        background: #4f0f8c !important;
+      }
+      .page_whoweare .cont_left > img {
+          display: block;
+          width: 80%;
+          margin: 30px 0 0 0;
+      }
+      .page_whoweare .cont_left .content_para {
+          color: #fff;
+          font-size: 18px;
+          line-height: 27px;
+          margin: 0 !important;
+      }
+
+      .img_wrap {}
+
+      .page_whoweare .img_wrap .element_bars_hr {
+          height: 20px;
+          width: 100% !important;
+          left: -30% !important;
+          right: auto !important;
+      }
+
+      .page_whoweare {
+          overflow: auto;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+      }
+
+      .page_whoweare .cont_left .media_content {
+          position: relative;
+          top: auto;
+          right: auto;
+          bottom: auto;
+          left: auto;
+          width: 90%;
+          padding: 0;
+          margin: 0 auto;
+          transform: unset;
+          background: #4f0f8c;
+      }
+
+      .page_whoweare .wwa_img_wrap {
+          position: relative;
+          top: auto;
+          right: auto;
+          bottom: auto;
+          left: auto;
+          display: none;
+      }
+
+      .page_whoweare .wwa_img_wrap img {
+          width: 90%;
+          height: auto;
+          position: relative;
+      }
+    /*who we are*/
+
+    /*mission*/
+      .page_mission .cont_right {
+          width: 100%;
+          float: none;
+          position: relative;
+          top: auto;
+          right: auto;
+          bottom: auto;
+          left: auto;
+          height: auto;
+          padding-bottom: 150px;
+      }
+
+      .page_mission .cont_left {
+          width: 100%;
+          float: none;
+          position: relative;
+          top: auto;
+          right: auto;
+          bottom: auto;
+          left: auto;
+          height: auto;
+          padding-bottom: 50px;
+          order: 1;
+      }
+
+      .page_mission .cont_right .mv_content_wrap {
+          width: 90%;
+          margin: 0 auto;
+      }
+      .page_mission .cont_right .mv_content_wrap img {
+          width: 45px;
+      }
+      .page_mission .cont_left .media_content {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        transform: unset;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 150px;
+        order: 2;
+        padding-bottom: 30px;
+        top: -100px;
+        height: auto;
+      }
+
+      .page_mission .cont_right .mv_content_wrap p {
+          font-size: 20px;
+          line-height: 30px;
+      }
+      
+      .page_mission {
+          overflow: auto;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+      }
+
+      .page_mission .element_bars_hr {
+          height: 50px;
+          width: 80% !important;
+          left: -100px !important;
+          right: auto !important;
+      }
+    /*mission*/
+
+    /*values*/
+      .page_values .cont_left {
+          width: 100%;
+          height: auto;
+          float: none;
+      }
+
+      .page_values .cont_right {
+          width: 100%;
+          height: auto;
+          float: none;
+      }
+
+      .page_values .values_List_wrapper {
+          width: 90%;
+          margin: 0 auto;
+          position: relative;
+          top: auto;
+          right: auto;
+          bottom: auto;
+          left: auto;
+          transform: unset !important;
+      }
+
+      .page_values {
+          background: #4f0f8c;
+          height: auto;
+          padding-bottom: 200px;
+          overflow: auto;
+      }
+
+      .page_values .values_List_wrapper .value_item {
+          display: block;
+      }
+
+      .page_values .values_List_wrapper .value_item>div {
+          width: 100%;
+          float: none;
+          clear: both;
+          display: block;
+          overflow: hidden;
+      }
+
+      .page_values .values_List_wrapper .value_item>div>div {
+          width: 100%;
+          float: none;
+          display: block;
+      }
+
+      .page_values .value_item>div>div p {
+          color: #fff;
+          line-height: 32px;
+          margin: 0;
+      }
+
+      .page_values .value_item h3 {
+          display: block;
+          width: 100%;
+          margin-bottom: 20px;
+      }
+
+      .page_values .value_item span {
+          display: inline-block;
+          width: calc( 100% / 3 );
+          padding: 20px 0;
+      }
+
+      .page_values .value_item>div>div img {
+          margin: 0;
+          float: none;
+          display: none;
+      }
+    /*values*/
+
+    /*bottom navs*/
+      a#btn_gotoNext_page {
+        padding-left: 60px;
+        text-align: center;
+        background-color: #ff375e;
+      }
+
+      a#btn_gotoPrev_page {
+        padding-right: 60px;
+        text-align: center;
+        background-color: #490f80;
+      }
+    /*bottom navs*/
+
+    /*chairman inner*/
+      .page_chairman .cont_left {
+          width: 100%;
+          height: auto;
+          position: relative;
+          top: inherit;
+          right: auto;
+          bottom: auto;
+          left: auto;
+          float: none;
+      }
+
+      .page_chairman .cont_left p {
+          width: 90%;
+          right: 0;
+          margin: 0 auto;
+      }
+
+      .page_chairman .cont_left img {
+          position: relative;
+          margin: 50px 0 0 0;
+          width: 80% !important;
+          height: auto !important;
+          top: 2px;
+      }
+
+      .page_chairman .cont_right {
+          width: 100%;
+          float: none;
+          height: auto;
+          padding-bottom: 100px;
+          background: #fff;
+      }
+
+      .page_chairman .text_high_content {
+          padding: 50px 0;
+          width: 90%;
+          margin: 0 auto;
+      }
+
+      .page_chairman .charimans_numbers {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        transform: unset !important;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        padding: 30px 5%;
+        display: block;
+        opacity: 1 !important;
+        background: #fff;}
+
+      .page_chairman .charimans_numbers .ch_num_left {
+          width: 100%;
+          float: none;
+          display: block;
+      }
+
+      .page_chairman .charimans_numbers .ch_num_right {
+          width: 100%;
+          float: none;
+          display: block;
+          margin: 20px 0 0 0;
+          padding: 30px 25px;
+      }
+
+      .page_chairman .charimans_numbers .ch_num_left * {
+          color: #4f0f8c !important;
+      }
+
+      .page_chairman .charimans_numbers .ch_num_left table tr td:first-child {
+          font-size: 19px;
+          line-height: 29px;
+      }
+
+      .page_chairman .charimans_numbers .ch_num_right p,
+      .charimans_numbers .ch_num_right b {
+          font-size: 18px;
+      }
+    /*chairman inner*/
+
+    /*ceo inner*/
+      .page_ceo .cont_left {
+          width: 100%;
+          height: auto;
+          position: relative;
+          top: inherit;
+          right: auto;
+          bottom: auto;
+          left: auto;
+          float: none;
+      }
+
+      .page_ceo .cont_left p {
+          width: 90%;
+          right: 0;
+          font-size: 17px;
+          margin: 0 auto;
+          line-height: 26px;
+      }
+
+      .page_ceo .cont_left img {
+          position: relative;
+          margin: 0;
+          width: 80% !important;
+          height: auto !important;
+          top: 5px;
+          margin-top: -110px;
+      }
+
+      .page_ceo .cont_right {
+          width: 100%;
+          float: none;
+          height: auto;
+          padding-bottom: 100px;
+          background: #fff;
+      }
+
+      .page_ceo .text_high_content {
+          padding: 50px 0;
+          width: 90%;
+          margin: 0 auto;
+      }
+
+      .page_ceo .ceo_numbers {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        transform: unset !important;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        padding: 30px 5%;
+        display: block;
+        opacity: 1 !important;
+        background: #fff;}
+
+      .page_ceo .ceo_numbers .ch_num_left {
+          width: 100%;
+          float: none;
+          display: block;
+      }
+
+      .page_ceo .ceo_numbers .ch_num_right {
+          width: 100%;
+          float: none;
+          display: block;
+          margin: 20px 0 0 0;
+          padding: 30px 25px;
+      }
+
+      .page_ceo .charimans_numbers .ch_num_left * {
+          /*color: #4f0f8c !important;*/
+      }
+
+      .page_ceo .charimans_numbers .ch_num_left table tr td:first-child {
+          font-size: 19px;
+          line-height: 29px;
+      }
+
+      .page_ceo .charimans_numbers .ch_num_right p,
+      .page_ceo .charimans_numbers .ch_num_right b {
+          font-size: 18px;
+      }
+      .page_ceo .cont_left .ceo_bx1 {
+          width: 100px;
+          height: 100px;
+          top: 0;
+          right: auto;
+          bottom: auto;
+          left: 0;
+          float: left;
+          position: relative;
+      }
+
+      .page_ceo .cont_left .ceo_bx2 {
+          width: 100px;
+          height: 100px;
+          top: 0;
+          right: auto;
+          bottom: auto;
+          left: 100px;
+          clear: both;
+          float: left;
+          position: relative;
+      }
+      .page_ceo .ceo_numbers .ch_num_left p {
+          font-size: 18px;
+          line-height: 28px;
+      }
+
+      .ceo_numbers .ch_num_right p, .ceo_numbers .ch_num_right b {
+          font-size: 18px;
+      }
+
+      .ceo_numbers .ch_num_right span {
+          margin: 10px 0;
+          font-size: 65px;
+      }
+      .page_ceo .text_high_content {
+          padding-top: 0;
+      }
+    /*ceo inner*/
+
+    /*intro*/
+      .page_intro {
+          width: 100%;
+          margin: 0 auto;
+      }
+
+      .page_intro .cwrapper {
+          overflow: hidden;
+          width: 90%;
+          margin: 0 auto;
+      }
+
+      .page_intro .img_wrap {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+      }
+
+      .page_intro .img_wrap .left {
+          width: 100%;
+          margin-bottom: 30px;
+          order: 1;
+      }
+
+      .page_intro .img_wrap .right {
+          width: 100%;
+          margin: 0 !important;
+      }
+
+      .page_intro .img_wrap img:nth-child(1) {}
+
+      .page_intro .img_wrap .left .bk_pink {
+          width: 100% !important;
+          position: relative !important;
+          margin: 0 !important;
+          top: auto !important;
+          right: auto !important;
+          bottom: auto !important;
+          left: auto !important;
+          padding: 30px 20px !important;
+          line-height: 23px;
+      }
+
+      .page_intro .tabular_data {
+          width: 800px;
+      }
+    /*intro*/
+}

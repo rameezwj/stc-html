@@ -21,7 +21,7 @@ jQuery(window).on('load', function(){
 	  var selected_cat = localStorage.getItem("stc_selected_category");
 	  var last_played_video = localStorage.getItem("stc_last_played_video");
 
-  	// console.log(last_played_video+'---'+selected_cat)
+		// console.log(last_played_video+'---'+selected_cat)
 	  
 	  // if(true){
 	  if(last_played_video==null && selected_cat==null){
@@ -56,9 +56,15 @@ jQuery(window).on('load', function(){
 		var next_page = jQuery(`a[data-page-link=${page_url[page_url.length-1]}]`).next().attr('data-page-link');
 		var next_page_text = jQuery(`a[data-page-link=${next_page}]`).html();
 
+		if(jQuery(window).width()<=767 && (next_page_text)!=undefined)
+			var next_page_text = 'التالي  ';
+
 		// get previous page url if it exists
 		var previous_page = jQuery(`a[data-page-link=${page_url[page_url.length-1]}]`).prev().attr('data-page-link');
 		var previous_page_text = jQuery(`a[data-page-link=${previous_page}]`).html();
+
+		if(jQuery(window).width()<=767 && (previous_page_text)!=undefined)
+			previous_page_text = 'السابق  ';
 
 		jQuery('body').append(`
 			<div class='inner_page_navigation'>
@@ -112,6 +118,12 @@ jQuery(window).on('load', function(){
 			// mousewheel
 	}, 3000)
 
+
+	// slide up bottom navigation after few seconds, on inner pages
+		setTimeout(function(){
+			TweenMax.to('.inner_page_navigation', 1, {bottom: 0, ease: Power4.easeInOut});
+		}, 2000);
+	// slide up bottom navigation after few seconds, on inner pages
 });
 
 

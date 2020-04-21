@@ -1,3 +1,5 @@
+var site_url = "/stc-html/";
+
 (function() {
   if(jQuery(window).width() <= 767){
     /*var pass = prompt("Please enter the password");
@@ -279,7 +281,7 @@ jQuery('document').ready(function(){
         localStorage.setItem("stc_selected_category", category_title);
         // console.log(localStorage.getItem("stc_selected_category"), '---', page_link);
         
-        var goto_url = window.location.origin+'/stc-html/'+page_link+".html";
+        var goto_url = window.location.origin+site_url+page_link+".html";
         TweenMax.to('.lds-ring', .3, {scale: 1, opacity: 1, delay: .5});
         TweenMax.to('.vertical_wipes_wrapper', 0, {display: 'block'})
         TweenMax.staggerFromTo('.vertical_wipes_wrapper > div.vwipes', .7, {left: '-100%', transformOrigin: 'center bottom'}, {left: 0, transformOrigin: 'center bottom', ease: Power4.easeInOut}, .1)
@@ -595,6 +597,6 @@ jQuery('document').ready(function(){
 
 // configuration
   jQuery('.sm_home').on('click', function(){
-    window.location.href = 'http://localhost/stc-html/';
+    window.location.href = window.location.origin+site_url;
   })
 // configuration

@@ -3318,7 +3318,9 @@ span.h1 {
   position: relative;
   z-index: 1;
 }
-
+.page_whoweare .cont_left > img {
+    display: none;
+}
 .page_whoweare .cont_left .media_content {
   width: 80%;
   /*height: 250px;*/
@@ -6501,12 +6503,13 @@ span.h1 {
 
 /*inner page navigation*/
   .inner_page_navigation {
-    position: relative;
+    /*position: relative;*/
+    position: fixed;
     width: 100%;
     /*background: #ff375e;*/
     background: #490f80;
     z-index: 5;
-    bottom: 0;
+    bottom: -100px;
     display: flex;
   }
   .inner_page_navigation > div {
@@ -6654,6 +6657,7 @@ span.h1 {
       margin: 0;
       position: relative;
       overflow: hidden;
+      transition: all .3s ease-out;
     }
     .financials_pdfs_wrapper a span{
       display: inline-block;
@@ -6682,6 +6686,25 @@ span.h1 {
       background-image: url('../img/icon_menu_download.png');
       left: 0;
       border-right: 1px solid #ff375e;
+    }
+    .financials_pdfs_wrapper a::before {
+        position: absolute;
+        bottom: -100%;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        content: "";
+        transition: all .3s ease-out;
+        background: #ff375e;
+        z-index: -1;
+    }
+
+    .financials_pdfs_wrapper a:hover::before {
+        bottom: 0;
+    }
+
+    .financials_pdfs_wrapper a:hover {
+        border-color: transparent;
     }
     .page_consolidate_financials .ch_num{
       background: #ff375e;
