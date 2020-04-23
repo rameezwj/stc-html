@@ -93,7 +93,7 @@ jQuery('document').ready(function(){
 // window scroll event
   jQuery(window).scroll(function(){
 
-    if(jQuery(this).scrollTop()>50){
+    if(jQuery(this).scrollTop()>50 && jQuery(window).width()>767){
       // TweenMax.to('.short_menu', .2, {x: -50, opacity: 0, ease: Linear.easeNone})
 
       if(current_slide==3 || jQuery('body').hasClass('page_inner')){
