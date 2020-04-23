@@ -344,6 +344,7 @@
     .h1 {
       font-size: 35px !important;
       line-height: 45px !important;
+      padding-left: 50px !important;
     }
     .screentop_para {
       margin: 100px 5% 30px 0 !important;
@@ -1051,6 +1052,7 @@
       .page_creation_bod_conclusion {
           display: flex;
           flex-direction: column;
+          height: auto;
       }
 
       .page_creation_bod_conclusion .wwa_img_wrap {
@@ -1070,4 +1072,85 @@
           left: -130px !important;
       }
     /*conclusion*/
+
+    /*inner_submenu_wrapper*/
+      .inner_submenu_wrapper{
+        width: calc( 100% - 40px );
+        margin: 0;
+        position: relative;
+        top: auto;
+        right: 40px;
+        bottom: auto;
+        left: auto;
+        margin-top: 150px;
+      }
+    /*inner_submenu_wrapper*/
+
+    /*operation*/
+      .ctable_wrapper{ display: none; }
+
+      .page_operations .screentop_para {
+          margin: 50px 0 20px 0 !important;
+      }
+
+      .page_operations .cwrapper {
+          margin: 0;
+      }
+
+      .page_operations .img_wrap {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .page_operations .left {
+          width: 100%;
+          order: 1;
+      }
+
+      .page_operations .right {
+          width: 100%;
+          margin: 0;
+      }
+
+      .page_operations .left .bk_purple {
+          position: relative !important;
+          top: auto !important;
+          right: auto !important;
+          bottom: auto !important;
+          left: auto !important;
+          width: 100% !important;
+          padding: 20px !important;
+          text-align: right !important;
+          line-height: 35px;
+          font-size: 21px;
+          margin-bottom: 20px;
+      }
+
+      .page_operations .operation_faqs {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+      }
+
+      .page_operations .operation_faqs .faq_listing {
+          width: 100%;
+          margin: 0;
+      }
+
+      .page_operations {
+          width: 90%;
+          margin: 0 auto;
+          padding-bottom: 100px;
+      }
+
+      .page_operations .operations_table {
+          width: 100%;
+          margin: 20px 0;
+      }
+
+      .page_operations .h5 {
+          margin: 10px 0 10px 0 !important;
+          line-height: 25px;
+      }
+    /*operation*/
 }
