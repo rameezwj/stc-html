@@ -17,7 +17,8 @@ jQuery(window).on('load', function(){
 	// if users are on innerpage, hide vertical wipes on page load*/
 	
 
-	if(!(jQuery('body').hasClass('landing_screen'))){
+	// if its not mobile device, check last play video configutation and proceed accordingly
+	if(jQuery(window).width()>=768){
 	  var selected_cat = localStorage.getItem("stc_selected_category");
 	  var last_played_video = localStorage.getItem("stc_last_played_video");
 
@@ -133,7 +134,7 @@ jQuery('document').ready(function(){
 		var selected_cat = localStorage.getItem("stc_selected_category");
 		var last_played_video = localStorage.getItem("stc_last_played_video");
 
-		if((selected_cat==null && last_played_video==null) || (last_played_video==selected_cat)){
+		if((selected_cat==null && last_played_video==null) || (last_played_video==selected_cat) || jQuery(window).width()<=767){
 			jQuery('.video_wrapper').remove();
 		}
 	// if theres no value set for stc_selected_category & stc_last_played_video, remove video section from the DOM

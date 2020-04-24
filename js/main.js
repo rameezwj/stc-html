@@ -205,36 +205,21 @@ jQuery('document').ready(function(){
       centeredSlides: true,
       slideToClickedSlide: true,
       mousewheel: true,
-      // simulateTouch: false,
-      // touchRatio: .7,
-      /*freeMode: true,
-      freeModeMomentum: true,
-      freeModeMomentumRatio: 100,
-      velocityRatio: 0.5,
-      freeModeSticky: true,*/
       preventInteractionOnTransition: true,
       preventClicks: true,
       pagination: {
-        /*el: '.menu_screen_wrapper .swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + '</span>';
-        },*/
       },
       on: {
         click: function(){
-          // if (!this.params.debugger) return;
           console.log('click');
         },
         transitionStart: function(index){
-          var activeSlide = jQuery('.swiper-slide.swiper-slide-active').attr('data-slide');
+          /*var activeSlide = jQuery('.swiper-slide.swiper-slide-active').attr('data-slide');
 
           jQuery('.menu_screen_wrapper span').css('top', jQuery(`.menu_items > div.mm${activeSlide}`).position().top+11+'px');
 
           jQuery(`.menu_items > div a`).css({'color': '#ccc', 'opacity': .5})
-          jQuery(`.menu_items > div.mm${activeSlide} a`).css({'color': '#fff', 'opacity': 1})
-
-          // console.log();
+          jQuery(`.menu_items > div.mm${activeSlide} a`).css({'color': '#fff', 'opacity': 1})*/
         }
       }
     });
