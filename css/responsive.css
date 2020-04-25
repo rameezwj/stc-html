@@ -346,6 +346,9 @@
       line-height: 45px !important;
       padding-left: 50px !important;
     }
+    .h1:not(.bk_pink) {
+        /*padding-left: 0 !important;*/
+    }
     .screentop_para {
       margin: 100px 5% 30px 0 !important;
     }
@@ -1004,7 +1007,11 @@
       }
 
       .page_intro .tabular_data {
-          width: 800px;
+          width: 100%;
+          overflow: auto;
+      }
+      .page_intro .tabular_data .stc_ctable {
+          min-width: 900px;
       }
     /*intro*/
 
@@ -1557,77 +1564,149 @@
 
     /*distribution of profit*/
          .distribution_of_profit_inner{
-           width: 90%;
-           margin: 0 auto;
-           position: relative;
+              width: 90%;
+              margin: 0 auto;
+              position: relative;
          }
-         .page_distribution_profit .col4,
-         .page_distribution_profit .col5,
-         .page_distribution_profit .col8{
-            width: 100% !important;
+          .page_distribution_profit .col4, .page_distribution_profit .col5, .page_distribution_profit .col8{
+              width: 100% !important;
          }
-         .page_distribution_profit .screentop_para{
-           margin-top: 30px !important;
+          .page_distribution_profit .screentop_para{
+              margin-top: 30px !important;
+              margin-right: 0 !important;
          }
-         .page_distribution_profit .h1{
-            font-size: 25px !important;
-            line-height: 33px !important;
+          .page_distribution_profit .h1{
+              font-size: 25px !important;
+              line-height: 33px !important;
          }
-         .page_distribution_profit .h5{
-            font-size: 17px;
-            line-height: 27px;
+          .page_distribution_profit .h5{
+              font-size: 17px;
+              line-height: 27px;
          }
-         .page_distribution_profit ul li{
-            font-size: 15px;
-            line-height: 27px;
-            margin-right: 5% !important;
+          .page_distribution_profit ul li{
+              font-size: 15px;
+              line-height: 27px;
+              margin-right: 5% !important;
          }
-         .page_distribution_profit .inner_submenu_wrapper{
-             width: calc( 90% - 40px );
-             margin: 0 auto;
-             position: relative;
-             top: auto;
-             right: 5%;
-             bottom: auto;
-             left: auto;
-             margin-top: 150px;
-             background: #7e1bdc;
+          .page_distribution_profit .inner_submenu_wrapper{
+              width: calc( 90% - 40px );
+              margin: 0 auto;
+              position: relative;
+              top: auto;
+              right: 5%;
+              bottom: auto;
+              left: auto;
+              margin-top: 150px;
+              background: #7e1bdc;
          }
-
-         .distribution_of_profit_inner .sp_wrap .content-wrapper .img-wrap{
-           margin-bottom: 20px;
-           height: auto;
+          .distribution_of_profit_inner .sp_wrap .content-wrapper .img-wrap{
+              margin-bottom: 20px;
+              height: auto;
          }
-         .distribution_of_profit_inner .sp_wrap .content-wrapper .right,
-         .distribution_of_profit_inner .sp_wrap .content-wrapper .left,
-         .distribution_of_profit_inner .sp_wrap .content-wrapper.c-row-reverse .left,
-         .distribution_of_profit_inner .sp_wrap .content-wrapper.c-row-reverse .right{
-           width: 100% !important;
-           min-height: auto;
+          .distribution_of_profit_inner .sp_wrap .content-wrapper .right, .distribution_of_profit_inner .sp_wrap .content-wrapper .left, .distribution_of_profit_inner .sp_wrap .content-wrapper.c-row-reverse .left, .distribution_of_profit_inner .sp_wrap .content-wrapper.c-row-reverse .right{
+              width: 100% !important;
+              min-height: auto;
          }
-         .distribution_of_profit_inner .sp_wrap .content-wrapper .right{
-           order: 2;
+          .distribution_of_profit_inner .sp_wrap .content-wrapper .right{
+              order: 2;
          }
-         .distribution_of_profit_inner .sp_wrap .content-wrapper .left{
-           order: 1;
+          .distribution_of_profit_inner .sp_wrap .content-wrapper .left{
+              order: 1;
          }
-         .distribution_of_profit_inner .sp_wrap .bar-wrap{
-           float: left;
-           position: static;
-           width: 100%;
-           margin-bottom:0;
+          .distribution_of_profit_inner .sp_wrap .bar-wrap{
+              float: left;
+              position: static;
+              width: 100%;
+              margin-bottom:0;
          }
-        .distribution_of_profit_inner .ctable_wrapper{
-           width: 100% !important;
-           overflow: auto;
+          .distribution_of_profit_inner .ctable_wrapper{
+              width: 100% !important;
+              overflow: auto;
          }
-         .distribution_of_profit_inner .sp_wrap .sp_row{
-           flex-wrap: wrap;
+          .distribution_of_profit_inner .sp_wrap .sp_row{
+              flex-wrap: wrap;
          }
-         .marginr50{
-           margin-right: 0 !important;
+          .marginr50{
+              margin-right: 0 !important;
          }
     /*distribution of profit*/
+
+    /*contribution of board of directors*/
+      .page_contribution{
+        padding-bottom: 100px;
+      }
+       .page_contribution .page_creation_bod_a .ctable_wrapper{
+           overflow: auto;
+           width:100%;
+           margin: 20px auto;
+      }
+       .page_contribution .page_creation_bod_a{
+           width:90%;
+           /*width:calc( 100% - 50px);*/
+           margin:0 auto;
+      }
+       .page_contribution .page_creation_bod_a .screentop_para{
+           margin:20px 0 20px 0 !important;
+      }
+       .page_contribution .page_inner .content_para{
+           margin-right: 0 !important;
+      }
+       .page_contribution .page_creation_bod_a .img_wrap .right, .page_contribution .page_creation_bod_a .sp_wrap .content-wrapper .left, .page_contribution .page_creation_bod_a .sp_wrap .content-wrapper .right, .page_contribution .page_creation_bod_a .sp_wrap .content-wrapper.c-row-reverse .right, .page_contribution .page_creation_bod_a .col8{
+           width: 100% !important;
+      }
+       .page_contribution .page_creation_bod_a .sp_wrap .content-wrapper .right{
+           margin-right: 0 !important;
+      }
+       .page_contribution .page_creation_bod_a .sp_wrap .content-wrapper .right .box_center_content{
+           margin:30px 0;
+           padding: 20px !important;
+      }
+       .page_contribution .page_creation_bod_a .sp_wrap .content-wrapper .img-wrap.margint100{
+           margin-top: 0 !important;
+           height: auto !important;
+      }
+       .page_contribution .page_creation_bod_a .sp_wrap .sp_row{
+           flex-wrap: wrap;
+      }
+       .page_contribution .page_creation_bod_a .sp_wrap .content-wrapper.c-row-reverse .right{
+           order: 2;
+      }
+       .page_contribution .page_creation_bod_a .sp_wrap .bar-wrap{
+           position: static;
+           transform: translate(0,0);
+           float: left;
+      }
+       .page_contribution .page_creation_bod_a .sp_wrap .content-wrapper .left > .marginr50.margint100:not(.img-wrap){
+           margin: 0 !important;
+      }
+       .page_contribution .page_creation_bod_a .sp_wrap .content-wrapper .left{
+           min-height: auto;
+      }
+       .page_contribution .page_creation_bod_a .marginr50{
+           margin-right: 0 !important;
+      }
+       .page_contribution .page_creation_bod_a .sp2_row .right{
+           height: auto !important;
+      }
+       .page_contribution .page_creation_bod_a .sp2_row .right .box_center_content{
+           padding: 20px 60px;
+      }
+       .page_contribution .page_creation_bod_a .sp_wrap .content-wrapper .img-wrap{
+           height: auto;
+           margin-bottom: 20px;
+      }
+       .page_contribution .page_creation_bod_a .sp2_row .right.pink_border .box_center_content{
+           padding: 20px;
+      }
+       .page_contribution .page_creation_bod_a .content_para{
+           margin-right: 0 !important;
+      }
+      .page_contribution ul li {
+          font-size: 14px;
+          line-height: 23px;
+          margin-right: 5% !important;
+      }
+    /*contribution of board of directors*/
 
     /*bod*/
       .page_bod {
@@ -1684,6 +1763,504 @@
           font-size: 30px;
       }
     /*bod*/
+
+    /*financials performance*/
+      .page_financials_performace{
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*background-color: #4f0f8c;*/
+      }
+      .page_financials_performace .inner_submenu_wrapper {
+          width: calc( 90% - 40px );
+          margin: 0 auto;
+          position: relative;
+          top: auto;
+          right: 5%;
+          bottom: auto;
+          left: auto;
+          margin-top: 150px;
+          background: #7e1bdc;
+          display: none;
+      }
+      .page_financials_performace .screentop_para {
+          /*margin-top: 30px !important;*/
+      }
+      .page_financials_performace .glb-sec-1-left{
+           width: 100%;
+           display: block;
+           padding: 10px 5% 20px 5%;
+      }
+      .page_financials_performace .glb-sec-1-left p,
+      .page_financials_performace .glb-sec-2-right > p,
+      .page_financials_performace .glb-sec-2-right-btm > p{
+           margin-right: 0 !important;
+      }
+      .page_financials_performace .glb-sec-2-right{
+          display: block;
+      }
+      .page_financials_performace .glb-sec-2-flip .glb-sec-2-right {
+           width: 100%;
+           padding-left: 5%;
+           padding-right: 5%;
+      }
+      .page_financials_performace .glb-sec-2-rep-3 .glb-sec-2-right {
+           width: 100%;
+           padding: 4%;
+      }
+      .page_financials_performace .glb-sec-2-flip-2 .glb-sec-2-right {
+           width: 100%;
+           padding-left: 4%;
+      }
+      .page_financials_performace .glb-sec-2-right-btm {
+           width: 100%;
+      }
+      .page_financials_performace .glb-sec-2-flip-2 .glb-sec-2-left {
+           width: 100%;
+      }
+      .page_financials_performace .ctable_wrapper {
+           margin: 0;
+           width: 175%;
+      }
+      .page_financials_performace p{
+           margin-right: 8% !important;
+      }
+      .page_financials_performace h3{
+           margin-right: 8% !important;
+      }
+      .page_financials_performace .glb-sec-6 > p {
+           margin: 20px 5% 16px 5% !important;
+      }
+      .page_financials_performace .col6 {
+           width: 85%;
+      }
+      .page_financials_performace .tabe-wrap{
+           overflow: scroll !important;
+           width: 100%;
+           padding-left: 1px;
+           padding-right: 1px;
+      }
+      .page_financials_performace .tabe-wrap table {
+           width: 170% !important;
+      }
+      .page_financials_performace .glb-sec-2-left{
+           width: 100%;
+           padding-right: 5%;
+           padding-left: 5% !important;
+      }
+      .page_financials_performace .glb-sec-2-rep-3 .glb-sec-2-left {
+           width: 100%;
+           margin-top: 0px;
+      }
+      .page_financials_performace .font-sizzze {
+           margin-right: 11% !important;
+           margin-left: 4% !important;
+      }
+      .page_financials_performace .box-1 {
+           width: 100%;
+      }
+      .page_financials_performace .glb-sec-2-right > p {
+           width: 90% !important;
+      }
+      /*first page css*/
+      .page_financials_performace .page_financials .cont_left {
+           width: 100%;
+           float: none;
+      }
+      .page_financials_performace .page_financials .cont_right {
+           width: 100%;
+           float: none;
+      }
+      .page_financials_performace .horizontal_fBox.snipit {
+           width: 360px;
+           margin: 0 0px 40px 0;
+      }
+      .page_financials_performace .horizontal_fBox .snipit_img img {
+           top: 18%;
+           max-width: 35px;
+      }
+      .page_financials_performace .snippetBar {
+           width: 100%;
+           margin: 20px 15px 40px 0;
+      }
+      .page_financials_performace .r-wrap-top {
+           font-size: 15px;
+           font-weight: bold;
+      }
+      .page_financials_performace .sB-left-wrap {
+           width: 55%;
+           font-size: 12px 
+      }
+      .page_financials_performace .r-wrap-bottom-bar{
+           display: none;
+      }
+      .page_financials_performace .l-wrap-inr-c{
+           top:0;
+      }
+      .page_financials_performace .page_financials {
+           height: auto;
+      }
+      .page_financials_performace .glb-sec-1-right {
+          display: none;
+      }
+      .page_financials_performace .glb-sec-1-flip{
+           margin-top: 0 
+      }
+      .page_financials_performace .mid_sect{
+           position: relative !important;
+           top: -445px !important;
+           right: 0px !important;
+           transform: translateY(0%) !important;
+           height: auto !important;
+      }
+      .page_financials_performace .page_financials .cont_right > p{
+           position: relative;
+           margin-top: 242px;
+           padding-top: 25px;
+           top: 0 !important;
+           right: 0 !important;
+           margin-right: 5% !important;
+           width: 90%;
+           min-height: 171px;
+      }
+      .page_financials_performace .page_financials .wrapper-fa{
+           right: 35px;
+           top: 32px;
+      }
+      .page_financials_performace .bx1 {
+           width: 80px !important;
+           height: 80px !important;
+           right: 242px !important;
+           top: 21px;
+      }
+      .page_financials_performace .snippet_wrapper.vertical {
+           width: 200px;
+           right: 69px;
+           top: 53px;
+           height: 80px;
+      }
+      .page_financials_performace .snippet_wrapper.vertical > div:nth-child(1) {
+           width: 50px;
+           height: 50px;
+           top: -50px;
+           border: 1px solid #a54ee1;
+           right: -1px;
+      }
+      .page_financials_performace .snippet_wrapper.vertical > div:nth-child(2) {
+           width: 100px;
+           padding: 10px 10px 17px 10px;
+           top: -50px;
+      }
+      .page_financials_performace .snippet_wrapper.vertical > div:nth-child(3) {
+           width: 100px;
+           height: 115px;
+           padding-top: 30px;
+           top: -160px;
+           right: 108px;
+      }
+      .page_financials_performace .bx1 img {
+           height: 85px !important;
+           bottom: -20px !important;
+           width: 60px;
+      }
+      .page_financials_performace .financials_banner .cont_right .horizontal_fBox.snipit {
+           left: 0%;
+      }
+      .page_financials_performace .financials_banner .cont_right .horizontal_fBox .snipit_text {
+           width: 30%;
+      }
+      .page_financials_performace .short_menu {
+           left: 0 !important;
+      }
+      .page_financials_performace .financials_banner .cont_right .horizontal_fBox.snipit {
+           left: -12%;
+      }
+      .page_financials_performace .snipit_wrap{
+           width: 50% !important;
+      }
+      .page_financials_performace .snipit_wrap span{
+           color: white !important;
+           font-size: 24px !important;
+           left: 60px !important;
+      }
+      .page_financials_performace .snipit_wrap span b {
+          color: white !important;
+      }
+    /*financials performance*/
+
+    /*risk management*/
+      .page_operations .screentop_para {
+          margin: 50px 0 20px 0 !important;
+      }
+      .page_risk_manage {
+          width: 90%;
+          margin: 0 auto;
+          padding-bottom: 100px;
+      }
+      .page_risk_manage .page_operations{
+          padding-bottom: 0;
+      }
+      .idf1 {
+          overflow: auto;
+          display: flex;
+          flex-direction: column;
+      }
+
+      .idf1 .risks_left {
+          width: 100% !important;
+          float: none;
+      }
+
+      .idf1 .risks_right {
+          width: 100% !important;
+          float: none;
+      }
+
+      .page_risk_manage .riskTop_para {
+          margin: 30px 0 30px 0 !important;
+      }
+
+      .page_risk_manage .marginr5 {
+          margin-right: 0 !important;
+      }
+
+      .page_risk_manage .img-container {
+          width: 100%;
+          top: 0;
+      }
+
+      .page_risk_manage .img-cont-inner-div {
+          width: 100%;
+          padding: 20px;
+          position: relative;
+          top: auto;
+          right: auto;
+          bottom: auto;
+          left: auto;
+          margin-top: 20px;
+          font-weight: normal !important;
+          font-size: 20px;
+          line-height: 30px;
+      }
+
+      .idf2 {
+          overflow: auto;
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 20px;
+          margin: 0;
+          width: 100%;
+      }
+
+      .idf2 .operations_table {
+          width: 100%;
+          overflow: auto;
+      }
+
+      .idf2 .operations_table .tabular_data {min-width: 1000px;}
+
+      .page_risk_manage .page_operations .tabular_data .c_row div {
+          padding: 20px;
+          font-size: 13px;
+          line-height: 22px;
+      }
+
+      .idf3 {
+          overflow: auto;
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+      }
+
+      .idf3 .glb-sec-2-left {
+          width: 100% !important;
+          float: none;
+          padding: 0;
+      }
+
+      .idf3 .glb-sec-2-right {
+          width: 100% !important;
+          float: none;
+          padding: 0;
+      }
+
+      .idf3 .glb-sec-2-left br,
+      .idf3 .glb-sec-2-right br{
+          display: inline !important;
+      }
+
+      .idf6 {
+          overflow: auto;
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+      }
+
+      .idf6 .glb-sec-risk-left {
+          width: 100% !important;
+          float: none;
+          padding: 0;
+          margin: 20px 0;
+      }
+
+      .idf6 .glb-sec-risk-right {
+          width: 100% !important;
+          float: none;
+          padding: 0;
+          margin: 0;
+      }
+      .risk-sec6{
+        padding-top: 20px;
+      }
+      .idf6 .marginb40{
+          margin-bottom: 0 !important;
+      }
+
+      .page_risk_manage .stc_table{
+        min-width: 1000px;
+      }
+      .idf12 {
+          overflow: auto;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 30px !important
+      }
+
+      .idf12 .risks_left {
+          width: 100% !important;
+          float: none;
+      }
+
+      .idf12 .risks_right {
+          width: 100% !important;
+          float: none;
+      }
+      .risks_right .sec-8-l-inner {
+          width: 100%;
+          top: 0;
+      }
+
+      .idf13 {
+          overflow: auto;
+          display: flex;
+          flex-direction: column;
+      }
+
+      .idf13 .risks_left {
+          width: 100% !important;
+          float: none;
+      }
+
+      .idf13 .risks_right {
+          width: 100% !important;
+          float: none;
+      }
+      .risks_right .sec-9-l-inner {
+          width: 100%;
+          top: 0;
+          margin: 20px 0 0 0;
+      }
+      .risks_right .sec-9-l-inner p{
+        padding: 0;
+      }
+      .risks_right .sec-9-l-inner p br{
+        display: inline-block;
+      }
+
+      .idf14 {
+          overflow: auto;
+          display: flex;
+          flex-direction: column;
+      }
+
+      .idf14 .risks_left {
+          width: 100% !important;
+          float: none;
+      }
+
+      .idf14 .risk-sec6 {
+          width: 100% !important;
+          float: none;
+      }
+      .idf14 .risk-sec6 div {
+        width: 100%;
+        float: none;
+        margin: 0;
+        overflow: auto;
+      }
+      .idf14 .risk-sec6 .rec6-inr{
+        width: 90%;
+        margin: 0 auto;
+      }
+      .idf14 .risk-sec6 .glb-sec-2-right-new > p {
+          position: relative !important;
+          line-height: 23px !important;
+          top: auto !important;
+          right: auto !important;
+          bottom: auto !important;
+          left: auto !important;
+          margin: 20px 0 !important;
+          padding: 0 !important;
+          width: 100% !important;
+      }
+
+      .idf14 .risk-sec6 div .rec6-inr table{
+        min-width: 700px;
+      }
+
+      .idf15 {
+          overflow: auto;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 0;
+      }
+
+      .idf15 .glb-sec-risk-left {
+          width: 100% !important;
+          float: none;
+          margin: 0;
+      }
+
+      .idf15 .glb-sec-risk-right {
+          margin: 0;
+          width: 100% !important;
+          float: none;
+      }
+      .idf15 .glb-sec-risk-right .marginb40{
+        margin-bottom: 0;
+      }
+
+      .idf16 {
+          overflow: auto;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 0;
+      }
+
+      .idf16 .float_left {
+          width: 100% !important;
+          float: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      .idf16 .glb-sec-2-right {
+          margin: 0;
+          width: 100% !important;
+          float: none;
+          padding: 0;
+      }
+      .page_risk_manage .fontBold{
+        line-height: 24px;
+      }
+      .page_risk_manage .glb-sec-2-right table{
+        width: 100%;
+      }
+    /*risk management*/
+
+    .menu_screen_wrapper,
+    .short_menu{
+      /*display: none;*/
+    }
 }
 
 .page_investment .content-wrapper .left .content_para{

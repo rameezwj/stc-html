@@ -2391,19 +2391,21 @@ span.h1 {
   height: 100%;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
   z-index: 8;
-  -webkit-clip-path: inset(0 100% 0 0);
+  overflow: hidden;
+  /*display: none;*/
+  /*-webkit-clip-path: inset(0 100% 0 0);
   clip-path: inset(0 0 0 100%);
   -webkit-transition: all 1s cubic-bezier(0.9, 0.01, 0, 1);
   -o-transition: all 1s cubic-bezier(0.9, 0.01, 0, 1);
-  transition: all 1s cubic-bezier(0.9, 0.01, 0, 1);
+  transition: all 1s cubic-bezier(0.9, 0.01, 0, 1);*/
   /*cursor: url('../img/inside_menu_icon.png'), auto;*/
 }
 
 .menu_screen_wrapper.reveal_mmenu {
-  -webkit-clip-path: inset(0);
-  clip-path: inset(0);
+  /*-webkit-clip-path: inset(0);
+  clip-path: inset(0);*/
 }
 
 .menu_screen_wrapper.submenu_active {
@@ -2493,6 +2495,7 @@ span.h1 {
   width: 100%;
   height: 100%;
   z-index: 2;
+  /*display: none;*/
 }
 
 .menu_screen_wrapper .menu_items {
@@ -2509,9 +2512,6 @@ span.h1 {
   -webkit-clip-path: inset(0);
   clip-path: inset(0);
   /*transition: all 1s ease-out;*/
-  -webkit-transition: all 1s cubic-bezier(0.9, 0.01, 0, 1);
-  -o-transition: all 1s cubic-bezier(0.9, 0.01, 0, 1);
-  transition: all 1s cubic-bezier(0.9, 0.01, 0, 1);
 }
 
 .menu_screen_wrapper .menu_items.menu_item_reveal {
@@ -2570,14 +2570,10 @@ span.h1 {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-clip-path: inset(0 100% 0 0);
-  clip-path: inset(0 100% 0 0);
   right: calc( 25% - 100px);
-  -webkit-transition: all 1s cubic-bezier(0.9, 0.01, 0, 1);
-  -o-transition: all 1s cubic-bezier(0.9, 0.01, 0, 1);
-  transition: all 1s cubic-bezier(0.9, 0.01, 0, 1);
   z-index: 2;
   cursor: url(../img/icon_close.png), auto;
+  display: none;
 }
 
 .sub_menu_wrapper.submenu_reveal {

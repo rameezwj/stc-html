@@ -53,61 +53,42 @@ jQuery(window).on('load', function(){
 		jQuery('.sub_menu_wrapper .submenu_content a').removeClass('active');
 		jQuery(`a[data-page-link=${page_url[page_url.length-1]}]`).addClass('active');
 
-		// get next page url if it exists
-		var next_page = jQuery(`a[data-page-link=${page_url[page_url.length-1]}]`).next().attr('data-page-link');
-		var next_page_text = jQuery(`a[data-page-link=${next_page}]`).html();
-
-		if(jQuery(window).width()<=767 && (next_page_text)!=undefined)
+		
+		if(jQuery(window).width()<=767){
 			var next_page_text = 'التالي  ';
+			var previous_page_text = 'السابق  ';
 
-		// get previous page url if it exists
-		var previous_page = jQuery(`a[data-page-link=${page_url[page_url.length-1]}]`).prev().attr('data-page-link');
-		var previous_page_text = jQuery(`a[data-page-link=${previous_page}]`).html();
+			if(jQuery('#btn_gotoNext_page').length)
+				jQuery('#btn_gotoNext_page').html(next_page_text);
 
-		if(jQuery(window).width()<=767 && (previous_page_text)!=undefined)
-			previous_page_text = 'السابق  ';
+			if(jQuery('#btn_gotoPrev_page').length)
+				jQuery('#btn_gotoPrev_page').html(previous_page_text)
+		}
 
-		jQuery('body').append(`
-			<div class='inner_page_navigation'>
-				<div>
-					${
-						next_page_text!=undefined
-						?
-							`<a href='javasvript: void(0)' id='btn_gotoNext_page'>${(next_page_text)!=undefined?next_page_text:''}</a>`
-						:
-						''
-					}
-				</div>
-				<div>
-					${
-						previous_page_text!=undefined
-						?
-							`<a href='javasvript: void(0)' id='btn_gotoPrev_page'>${(previous_page_text)!=undefined?previous_page_text:''}</a>`
-						:
-						''
-					}
-				</div>
-			</div>
-		`)
+		var page_switching_triggered = false;
 
-		var page_switching_triggered = true;
+		jQuery('.inner_page_navigation > div a#btn_gotoNext_page').on('click', function(e){
+			e.preventDefault();
+			var goto_page = jQuery(this).attr('data-goto-page-link');
 
-		jQuery('.inner_page_navigation > div a#btn_gotoNext_page').on('click', function(){
-			if(next_page!=undefined && !(page_switching_triggered)){
-				page_switching_triggered = true;
-				jQuery(`a[data-page-link=${next_page}]`).trigger('click');
+			if(goto_page!='' && (page_switching_triggered)){
+				page_switching_triggered = false;
+				jQuery(`a[data-page-link=${goto_page}]`).trigger('click');
 			}			
 		});
 
-		jQuery('.inner_page_navigation > div a#btn_gotoPrev_page').on('click', function(){
-			if(previous_page!=undefined && !(page_switching_triggered)){
+		jQuery('.inner_page_navigation > div a#btn_gotoPrev_page').on('click', function(e){
+			e.preventDefault();
+			var goto_page = jQuery(this).attr('data-goto-page-link');
+
+			if(goto_page!='' && (page_switching_triggered)){
 				page_switching_triggered = true;
-				jQuery(`a[data-page-link=${previous_page}]`).trigger('click');
+				jQuery(`a[data-page-link=${goto_page}]`).trigger('click');
 			}			
 		});
 
 		setTimeout(function(){
-			page_switching_triggered = false;
+			page_switching_triggered = true;
 
 			// mousewheel
 			  document.addEventListener('wheel', function(e) {
