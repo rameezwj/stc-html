@@ -371,6 +371,9 @@
       .short_menu ul li a{
         width: 100%;
       }
+      .page_inner .short_menu {
+        position: relative;
+      }
     /*short menu*/
 
     /*main menu*/
@@ -741,7 +744,12 @@
           width: 100%;
           margin-bottom: 20px;
       }
-
+      .page_values .value_item h3 img {
+        display: inline-block;
+        width: 30px;
+        position: relative;
+        margin-left: 15px;
+      }
       .page_values .value_item span {
           display: inline-block;
           /*width: calc( 100% / 3 );*/
@@ -1576,6 +1584,18 @@
            display: flex;
            order: 1;
         }
+        .page_contribution #inner_section4 .content-wrapper{
+          display: flex;
+          flex-direction: column;
+        }
+        .page_contribution #inner_section4 .content-wrapper .left{
+          width: 100%;
+          order: 2;
+        }
+        .page_contribution #inner_section4 .content-wrapper .right{
+          width: 100%;
+          order: 1;
+        }
     /*creation of board of directors*/
 
     /*distribution of profit*/
@@ -2381,7 +2401,11 @@
       }
     /*page highlights | main slide*/
 
-    /*financial highlights*/
+    /*financial highlights | main slides*/
+      .mobile_landing_slider .swiper_content .page_financials .cont_left span.h1{
+        min-width: auto;
+      }
+
       .swiper_content .page_financials {
           display: flex;
           flex-direction: column;
@@ -2438,7 +2462,7 @@
       .swiper_content .page_financials .snippetBar .sB-left-wrap {
           float: left;
       }
-    /*financial highlights*/
+    /*financial highlights | main slides*/
 
     /*top slides, mobile*/
       .msld_1 .screentop_para {
@@ -2449,11 +2473,6 @@
           margin: 0 !important;
       }
     /*top slides, mobile*/
-
-    .menu_screen_wrapper,
-    .short_menu{
-      /*display: none;*/
-    }
 }
 
 .page_investment .content-wrapper .left .content_para{

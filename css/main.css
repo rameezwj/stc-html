@@ -6191,7 +6191,9 @@ span.h1 {
   float: right;
   width: 200px;
 }
-
+.value_item h3 img{
+  display: none;
+}
 .value_item span {
   color: #fff;
   font-size: 17px;
