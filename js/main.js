@@ -1,4 +1,5 @@
-var site_url = "/stc-html/";
+var site_url = "/stc-html/"; // development
+// var site_url = "/stc2020/stc-html/"; // production
 
 // dom ready event
 var navigate = '';
@@ -46,19 +47,28 @@ jQuery('document').ready(function(){
     anim_landing();
     anim_shortmenu();
 
-    // play homepage video
+    // if its landign page and not on mobile, play homepage video, else remove the video as well as desktop slides
       if(jQuery('body').hasClass('landing_screen')){
-        var video = document.getElementById('category_video');
-        
-        video.play();
-        
-        video.onended = function() {
-          TweenMax.to('.video_wrapper', 2, {top: '-50%', scale: .7, 'clip-path': 'inset(0 0 80% 0)', transformOrigin: 'center top', scale: 1, ease: Power4.easeInOut});
-          TweenMax.fromTo('.landing_slider_wrapper', 3, {y: 500}, {y: 0, ease: Power4.easeInOut, delay: -1});
-        };
+        if(jQuery(window).width()>767){
+
+          // remove mobile landing slider on desktop devices
+          jQuery('.mobile_landing_slider').remove();
+
+          var video = document.getElementById('category_video');
+          
+          video.play();
+          
+          video.onended = function() {
+            TweenMax.to('.video_wrapper', 2, {top: '-50%', scale: .7, 'clip-path': 'inset(0 0 80% 0)', transformOrigin: 'center top', scale: 1, ease: Power4.easeInOut});
+            TweenMax.fromTo('.landing_slider_wrapper', 3, {y: 500}, {y: 0, ease: Power4.easeInOut, delay: -1});
+          };
+        }
+        else{
+          jQuery('.landing_slider_wrapper, .video_wrapper').remove();
+        }
       }
-    // play homepage video
-    
+    // if its landign page and not on mobile, play homepage video, else remove the video as well as desktop slides
+        
 
     // quick goto page from main slides
       jQuery('.quick_go_btns').click(function(){
@@ -245,16 +255,16 @@ jQuery('document').ready(function(){
       if(jQuery('.menu_screen_wrapper').hasClass('reveal_mmenu')){
 
         if(jQuery('body').hasClass('page_inner')){
-          TweenMax.to('.short_menu', 1, {left: '-120px', ease: Power4.easeInOut})
+          // TweenMax.to('.short_menu', 1, {left: '-120px', ease: Power4.easeInOut})
         }
         else{
           TweenMax.to('.short_menu', 1, {left: 0, ease: Power4.easeInOut})
         }
+
         TweenMax.to('.short_menu ul li', 1, {background: '#FF375E', ease: Power4.easeInOut})
 
         jQuery('.menu_screen_wrapper').toggleClass('reveal_mmenu');
-        // jQuery('.menu_screen_wrapper').fadeOut('fast');
-
+        
         TweenMax.staggerFromTo(`.menu_screen_wrapper .menu_items > div, .menu_screen_wrapper .menu_items > span`, 1.5, {opacity: 1, y: 0}, {opacity: 0, y: -100, ease: Power4.easeOut}, .1);
 
         TweenMax.staggerFromTo(`.menu_screen_wrapper .swiper-slide .mask_layer`, 1.5, {opacity: 1, x: '100%'}, {opacity: 1, x: '0', ease: Power4.easeInOut, delay: 0}, .1);
@@ -269,7 +279,7 @@ jQuery('document').ready(function(){
         menu_open = true;
         menuSwiper.slideTo(0, 100);
 
-        TweenMax.to('.short_menu', 1, {left: -(jQuery('.short_menu ul li a').width()*2)+'px', top: 0, ease: Power4.easeInOut})
+        // TweenMax.to('.short_menu', 1, {left: -(jQuery('.short_menu ul li a').width()*2)+'px', top: 0, ease: Power4.easeInOut})
         TweenMax.to('.short_menu ul li', 1, {background: '#4F0F8C', ease: Power4.easeInOut})
 
         TweenMax.set(`.menu_screen_wrapper .swiper-slide .mask_layer`, {x: 0});
@@ -294,7 +304,7 @@ jQuery('document').ready(function(){
   document.addEventListener('wheel', function(e) {
       
       // for main slides movement
-      if(jQuery('body').hasClass('landing_screen')){
+      if(jQuery('body').hasClass('landing_screen') && jQuery(window).width()>767){
         // if(false){
         if(!(menu_open)){
           var delta = e.deltaY;
@@ -404,17 +414,19 @@ jQuery('document').ready(function(){
 // page wise animation
   // landing screen
     function anim_landing(){
-      TweenMax.set('.page_landing .landing_bar_1', {scale: 0});
-      TweenMax.set('.page_landing .lImg_icon_wrapper img, .page_landing .logo_stc img', {opacity: 0});
-      TweenMax.set('.page_landing .mask_a', {left: '0%'})
-      TweenMax.set('.page_landing .masking > img', {opacity: 0, scale: 3})
-      
-      TweenMax.staggerFromTo('.page_landing .lImg_icon_wrapper img', 1, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut, delay: 1.5}, .2)
-      TweenMax.staggerFromTo('.page_landing .logo_stc img', 1, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut, delay: 1.5}, .2)
+      if(jQuery(window).width()>767 && jQuery('body').hasClass('landing_screen')){
+        TweenMax.set('.page_landing .landing_bar_1', {scale: 0});
+        TweenMax.set('.page_landing .lImg_icon_wrapper img, .page_landing .logo_stc img', {opacity: 0});
+        TweenMax.set('.page_landing .mask_a', {left: '0%'})
+        TweenMax.set('.page_landing .masking > img', {opacity: 0, scale: 3})
+        
+        TweenMax.staggerFromTo('.page_landing .lImg_icon_wrapper img', 1, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut, delay: 1.5}, .2)
+        TweenMax.staggerFromTo('.page_landing .logo_stc img', 1, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut, delay: 1.5}, .2)
 
-      TweenMax.fromTo('.page_landing .landing_bar_1', 1.5, {scaleX: 0}, {scale: 1, ease: Power2.easeInOut, delay: .8})
-      TweenMax.staggerFromTo('.page_landing .mask_a', 2, {left: '0%'}, {left: '-201%', ease: Power3.easeInOut}, .2)
-      TweenMax.staggerFromTo('.page_landing .masking > img', 1.5, {opacity: 0, scale: 3}, {opacity: 1, scale: 1, ease: Power2.easeInOut}, .2)
+        TweenMax.fromTo('.page_landing .landing_bar_1', 1.5, {scaleX: 0}, {scale: 1, ease: Power2.easeInOut, delay: .8})
+        TweenMax.staggerFromTo('.page_landing .mask_a', 2, {left: '0%'}, {left: '-201%', ease: Power3.easeInOut}, .2)
+        TweenMax.staggerFromTo('.page_landing .masking > img', 1.5, {opacity: 0, scale: 3}, {opacity: 1, scale: 1, ease: Power2.easeInOut}, .2)
+      }
     }
   // landing screen
 
@@ -435,12 +447,12 @@ jQuery('document').ready(function(){
   // short_menu
     function anim_shortmenu(){
       if(jQuery('body').hasClass('page_inner')){
-        TweenMax.set('.short_menu', {left: '-360'})
-        TweenMax.fromTo('.short_menu', 1, {left: '-360'}, {left: '-120px', ease: Power4.easeOut, delay: .2})
+        // TweenMax.set('.short_menu', {left: '-360'})
+        // TweenMax.fromTo('.short_menu', 1, {left: '-360'}, {left: '-120px', ease: Power4.easeOut, delay: .2})
       }
       else{
-        TweenMax.set('.short_menu', {left: '-360'})
-        TweenMax.fromTo('.short_menu', 1, {left: '-360'}, {left: 0, ease: Power4.easeOut, delay: .2})
+        // TweenMax.set('.short_menu', {left: '-360'})
+        // TweenMax.fromTo('.short_menu', 1, {left: '-360'}, {left: 0, ease: Power4.easeOut, delay: .2})
       }
     }
   // short_menu
