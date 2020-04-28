@@ -22,7 +22,7 @@
 
   /*short menu*/
     .short_menu {
-      width: calc( 70px * 6);
+      width: calc( 70px * 4);
       height: 70px;
     }
 
@@ -2489,9 +2489,4 @@
 
 .page_inner .page_financials_performace{
   padding-bottom: 100px;
-}
-
-.menu_screen_wrapper,
-.short_menu{
-  /*display: none;*/
 }
