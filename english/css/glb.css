@@ -15,7 +15,7 @@
 }
 .font-sizzze{
     font-size: 20px;
-    margin: 50px 60px 0px 0px;
+    margin: 50px 0px 0px 60px;
 }
 .box-1{
     padding: 140px 5% 140px 12%;
@@ -81,7 +81,7 @@
     font-size: small;
     display: inline-block;
     vertical-align: top;
-    padding: 0px 4% 0px 1%;
+    padding: 0px 1% 0px 4%;
     position: relative;
     margin-top: 280px;
 }
@@ -182,11 +182,11 @@
 
 .glb-sec-2-flip .glb-sec-2-right{
     width: 55%;
-    padding-right: 4%;
+    padding-left: 4%;
 }
 .glb-sec-2-flip-2 .glb-sec-2-right{
     width: 52%;
-    padding-right: 4%;
+    padding-left: 4%;
 }
 .glb-sec-2-rep-3 .glb-sec-2-right{
     width: 52%;
@@ -254,7 +254,7 @@
     border-bottom: 1px solid #4F0F8C;
 }
 .tri-a-left{
-    border-left: 1px solid #C893EC;
+    border-right: 1px solid #C893EC;
 }
 
 .tr1-1 .c1{
@@ -278,8 +278,8 @@
 
 .c1{
     width: 44%;
-    text-align: right;
-    padding-right: 30px;
+    text-align: left;
+    padding-left: 30px;
 }
 
 
@@ -317,9 +317,9 @@
 }
 
 .tr3 .td1 {
-    text-align: right;
+    text-align: left;
     font-size: 16px;
-    padding: 15px 15px 10px 0px;
+    padding: 15px 10px 0px 15px;
     border-bottom-width:0;
     font-weight: bold;
 }
@@ -337,7 +337,7 @@
 
 
 .tr3 .td2:first-child {
-    text-align: right;
+    text-align: left;
 }
 
 .glb-sec-6 .tr3 .td2:first-child {
@@ -353,9 +353,8 @@
 }
 .c8{
     border-right: 1px solid #4F0F8C;
-    padding: 12px 25px 10px 0px;
+    padding: 12px 0 10px 25px;
     background-color: #ff375e;
- 
 }
 .c9{
     text-align: center;
@@ -558,7 +557,7 @@
 .page_operations .operation_faqs .faq_listing{
     float: right;
     width: 40%;
-    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .page_operations .operations_table{
@@ -641,11 +640,11 @@
 .col4-5i{width: 45% !important;}
 .col5-5i{width: 55% !important;}
 .smallFs{font-size: small;}
-.marginr5 {margin-right: 50px !important;}
+.marginr5 {margin-left: 50px !important;}
 .upBarNew .upBarNew-w{float: left;}
 .img-container {
               width: 60%;
-              float: left;
+              float: right;
               position: relative;
               top: 40px;
               }
@@ -661,15 +660,16 @@
 .img-container img {
                     width: 100%;
                       }
-.risks_right{float: left;}
-.risks_left{float: right;}
+.risks_right{float: right;}
+.risks_left{float: left;}
 
-.img-cont-inner-div{padding: 30px 60px 30px 60px;
+.img-cont-inner-div{
+    padding: 30px 60px 30px 60px;
     width: 80%;
     font-size: 20px;
     bottom: -50px;
     position: absolute;
-    right: -100px;
+    left: -100px;
 }
 
 .pageRisks_banner{
@@ -691,7 +691,7 @@ padding-bottom: 90px;}
 .glb-sec-risk-left{
     display: inline-block;
     vertical-align: top;
-    margin-right: 60px;
+    margin-left: 60px;
 }
 /*glb-sec-risk*/
 
@@ -705,16 +705,15 @@ padding-bottom: 90px;}
     margin: 100px 0 0 0;
   }
   .page_operations .screentop_para {
-    margin: 50px 50px 0 0;
-    overflow: hidden;
+    margin: 50px 0 0 50px;
     display: inline-block;
     position: relative;
   }
   .page_operations .img_wrap{
     position: relative;
   }
-  .page_operations .right{ float: right; margin-right: 50px; }
-  .page_operations .left{ float: left; margin-top: 0px; text-align: left; position: relative; }
+  .page_operations .right{float: left;margin-left: 50px;}
+  .page_operations .left{float: right;margin-top: 0px;text-align: left;position: relative;}
   .page_operations .operation_faqs {
     overflow: hidden;
     position: relative;
@@ -727,7 +726,7 @@ padding-bottom: 90px;}
   .page_operations .operation_faqs .faq_listing{
     float: right;
     width: 40%;
-    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .page_operations .operations_table{
@@ -859,7 +858,7 @@ padding-bottom: 90px;}
 
 /* Risks Css Section 8 start*/
 .sec-8-l-inner{
-    float: left;
+    float: right;
     top: 70px;
     position: relative;
     width: 80%;
@@ -868,10 +867,12 @@ padding-bottom: 90px;}
 
 /* Risks Css Section 9 start*/
 .sec-9-r-inner img, .sec-8-l-inner img{width: 100%}
-.sec-9-l-inner{width: 80%;
+.sec-9-l-inner{
+    width: 80%;
     position: relative;
-    float: left;
-    margin-top: 150px;}
+    float: right;
+    margin-top: 150px;
+    }
 
 .marginb20{margin-bottom: 20px !important;}
 

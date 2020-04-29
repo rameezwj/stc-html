@@ -1,4 +1,4 @@
-var site_url = "/stc-html/"; // development
+var site_url = "/stc-html/english/"; // development
 // var site_url = "/stc2020/stc-html/"; // production
 
 // dom ready event

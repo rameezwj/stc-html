@@ -55,8 +55,8 @@ jQuery(window).on('load', function(){
 
 		
 		if(jQuery(window).width()<=767){
-			var next_page_text = 'التالي  ';
-			var previous_page_text = 'السابق  ';
+			var next_page_text = 'Next';
+			var previous_page_text = 'Previous';
 
 			if(jQuery('#btn_gotoNext_page').length)
 				jQuery('#btn_gotoNext_page').html(next_page_text);

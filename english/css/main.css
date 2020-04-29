@@ -1552,7 +1552,7 @@ span.h1 {
   }
   .page_serving_pilgrams .cont_left {
     width: 50%;
-    float: right;
+    float: left;
     height: 100%;
     /* overflow: hidden; */
     position: fixed;
@@ -1562,7 +1562,7 @@ span.h1 {
 
   .page_serving_pilgrams .cont_right {
     width: 50%;
-    float: left;
+    float: right;
     height: 100%;
     /* overflow: auto; */
     background-color: #fff;
@@ -1570,7 +1570,7 @@ span.h1 {
   }
 
   .page_serving_pilgrams .cont_left .screentop_para {
-    margin: 50px 50px 50px 0;
+    margin: 50px 0 50px 50px;
     overflow: hidden;
     display: inline-block;
     position: relative;
@@ -1582,7 +1582,7 @@ span.h1 {
     font-size: 13px;
     line-height: 17px;
     position: relative;
-    right: 100px;
+    left: 100px;
     font-family: "stc_light";
   }
 
@@ -1629,7 +1629,7 @@ span.h1 {
 
   .page_bod .cont_left {
     width: 50%;
-    float: right;
+    float: left;
     height: 100%;
     /* overflow: hidden; */
     position: fixed;
@@ -1639,7 +1639,7 @@ span.h1 {
 
   .page_bod .cont_right {
     width: 50%;
-    float: left;
+    float: right;
     height: 100%;
     /* overflow: auto; */
     background-color: #fff;
@@ -1648,7 +1648,7 @@ span.h1 {
   }
 
   .page_bod .cont_left .screentop_para {
-    margin: 50px 50px 50px 0;
+    margin: 50px 0 50px 50px;
     overflow: hidden;
     display: inline-block;
     position: relative;
@@ -1659,7 +1659,7 @@ span.h1 {
     height: auto;
     position: relative;
     top: 100px;
-    right: 100px;
+    left: 100px;
   }
 
   .bod_wrapper{
@@ -1669,7 +1669,7 @@ span.h1 {
     margin: 0 auto;
     padding-top: 290px;
     padding-bottom: 200px;
-    left: 1px;
+    right: 1px;
   }
   .bod_list_row {
     float: left;
@@ -1685,14 +1685,14 @@ span.h1 {
     position: absolute;
     bottom: -102px;
     height: 90px;
-    padding: 0 0 0 20px;
+    padding: 0 20px 0 0;
   }
   .bod_list_row:nth-child(even) .bod_items{
-    float: left;
+    float: right;
     margin-left: 1px;
   }
   .bod_list_row:nth-child(odd) .bod_items{
-    float: right;
+    float: left;
     margin-left: 2px;
   }
   .bod_list_row:nth-child(1) .bod_items{
@@ -1705,7 +1705,7 @@ span.h1 {
   }
   .bod_list_row:nth-child(even) .bod_items p,
   .bod_list_row:nth-child(even) .bod_items span{
-    margin-right: 10px;
+    margin-left: 20px;
   }
   .bod_items p{
     font-size: 14px;
@@ -1918,7 +1918,7 @@ span.h1 {
 
   .page_strategy .cont_left {
     width: 50%;
-    float: right;
+    float: left;
     height: 100%;
     /* overflow: hidden; */
     position: fixed;
@@ -1931,7 +1931,7 @@ span.h1 {
   }
   .page_strategy .cont_right {
     width: 50%;
-    float: left;
+    float: right;
     min-height: 100vh;
     height: 100%;
     /* overflow: auto; */
@@ -1952,7 +1952,7 @@ span.h1 {
   }
 
   .page_strategy .cont_left .screentop_para {
-    margin: 50px 50px 50px 0;
+    margin: 50px 0 50px 50px;
     overflow: hidden;
     display: inline-block;
     position: relative;
@@ -1964,7 +1964,7 @@ span.h1 {
     font-size: 13px;
     line-height: 17px;
     position: relative;
-    right: 100px;
+    left: 100px;
     font-family: "stc_light";
   }
 
@@ -2004,9 +2004,9 @@ span.h1 {
   }
 
   .page_operations .operation_faqs .faq_listing{
-    float: right;
+    float: left;
     width: 40%;
-    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .page_operations .operations_table{
@@ -2197,7 +2197,7 @@ span.h1 {
 .horizontal_fBox.snipit>div {
   float: left;
   height: 100%;
-  border-right: none;
+  border-left: none;
 }
 
 .horizontal_fBox .snipit_img {
@@ -5981,7 +5981,7 @@ span.h1 {
 
 /*page social responsibility*/
     .page_social_responsibility .screentop_para{
-      margin: 50px 50px 50px 0;
+      margin: 50px 50px 0 50px;
       overflow: hidden;
       display: inline-block;
       position: relative;
@@ -6001,7 +6001,7 @@ span.h1 {
      }
     .page_social_responsibility .content-wrapper.c-row-reverse .left{
       width: 50%;
-      float: right;
+      float: left;
     }
     .page_social_responsibility .content-wrapper.c-row-reverse .left .box_center_content{
       float: right;
@@ -6016,7 +6016,7 @@ span.h1 {
     }
     .page_social_responsibility .content-wrapper .left{
       width: 50%;
-      float: left;
+      float: right;
       position: relative;
       min-height: 250px;
     }
@@ -6043,7 +6043,7 @@ span.h1 {
     }
     .page_social_responsibility .content-wrapper .right{
       width: 40%;
-      float: right;
+      float: left;
       position: relative;
       min-height: 250px;
     }
@@ -6074,11 +6074,10 @@ span.h1 {
       box-sizing: border-box;
       position: absolute;
       top: 0;
-      left: 0;
+      right: 0;
       width: 20%;
       height: 100%;
       border: 1px solid #FF375E;
-
    }
     .page_social_responsibility .sp3_row {
     display: flex;
@@ -6087,7 +6086,7 @@ span.h1 {
       display: inline-flex;
       align-items: center;
       order: 2;
-      margin-right: 50px;
+      margin-left: 50px;
       width: 50%;
    }
    .page_social_responsibility .sp3_row .right
@@ -6120,8 +6119,8 @@ span.h1 {
    .marginr50{
     margin-right: 50px !important;
    }
-   .page_social_responsibility *{ 
-      text-align: right !important;
+   .page_social_responsibility *{
+      text-align: left !important;
    }
 /*page_social_responsibility*/
 
@@ -6372,7 +6371,7 @@ span.h1 {
 
 /*introduction*/
   .page_intro .screentop_para{
-    margin: 50px 50px 50px 0;
+    margin: 50px 0 50px 50px;
     overflow: hidden;
     display: inline-block;
     position: relative;
@@ -6393,8 +6392,8 @@ span.h1 {
     text-align: center;
     color: #4f0f8c;
     border: 1px solid #4f0f8c;
-    border-left: none;
-    display: inline-flex; 
+    /* border-left: none; */
+    display: inline-flex;
     word-break: break-word;
     align-items: center;
     border-bottom: none;
@@ -6435,7 +6434,7 @@ span.h1 {
   .page_intro .tabular_data .c_row.first div.last{
     padding: 0;
     flex-wrap: wrap;
-    border-left: 0;
+    border-right: 0;
     flex: 1;
     align-items: initial;
   }
@@ -6453,8 +6452,8 @@ span.h1 {
     align-items: center;
     flex: 1;
     height: 100%;
-     border-left: 1px solid #fff; 
-     border-top: 1px solid #fff; 
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
     width: 50%;
     justify-content: center;
     padding: 10px 20px;
@@ -7038,24 +7037,24 @@ span.h1 {
 
 /*sustainability*/
   .page_sustainability .screentop_para {
-      margin: 50px 50px 0 0;
+      margin: 50px 0 0 50px;
       overflow: hidden;
       display: inline-block;
       position: relative;
   }
   .rw1 .left {
       position: relative;
-      float: left;
+      float: right;
       margin-top: -150px;
   }
 
   .rw1 .right {
       position: relative;
-      float: right;
+      float: left;
   }
 
   .rw1 {
-      margin-right: 50px;
+      margin-left: 50px;
       margin-top: 100px;
   }
 
@@ -7065,16 +7064,16 @@ span.h1 {
 
   .rw2 .left {
       position: relative;
-      float: left;
+      float: right;
   }
 
   .rw2 .right {
       position: relative;
-      float: right;
+      float: left;
   }
 
   .rw2 {
-      margin-left: 50px;
+      margin-right: 50px;
       margin-top: 100px;
       padding-bottom: 200px;
   }
@@ -7138,13 +7137,13 @@ span.h1 {
       margin: 100px 0 0 0;
     }
     .human_resource_inner .screentop_para{
-      margin: 50px 50px 0 0;
+      margin: 50px 0 0 50px;
       overflow: hidden;
       display: inline-block;
       position: relative;
     }
-    .human_resource_inner .right{ float: right; margin-right: 50px; }
-    .human_resource_inner .left{ float: left;  position: relative; }
+    .human_resource_inner .right{float: left;margin-left: 50px;}
+    .human_resource_inner .left{float: right;position: relative;}
     .operation_faqs {
       overflow: hidden;
       position: relative;
@@ -7155,7 +7154,7 @@ span.h1 {
     }
     .human_resource_inner .cwrapper .img_wrap{
         min-height: 400px;
-        text-align: left;
+        text-align: right;
     }
      .human_resource_inner .cwrapper .img_wrap img{
       height: 100%;
@@ -7164,9 +7163,9 @@ span.h1 {
       object-position: top right;
     }
     .operation_faqs .faq_listing{
-      float: right;
+      float: left;
       width: 40%;
-      margin-left: 10%;
+      margin-right: 10%;
     }
 
     .operations_table{
@@ -7321,7 +7320,7 @@ span.h1 {
 /**/
     /*distribution_of_profit_inner*/
     .distribution_of_profit_inner .screentop_para{
-      margin: 50px 50px 50px 0;
+      margin: 50px 0 50px 50px;
       overflow: hidden;
       display: inline-block;
       position: relative;
@@ -7526,7 +7525,7 @@ span.h1 {
     }
     .distribution_of_profit_inner .sp_wrap .content-wrapper .left{
       width: 50%;
-      float: left;
+      float: right;
       position: relative;
       min-height: 250px;
     }
@@ -7553,7 +7552,7 @@ span.h1 {
     }
     .distribution_of_profit_inner .sp_wrap .content-wrapper .right{
       width: 40%;
-      float: right;
+      float: left;
       position: relative;
       min-height: 250px;
     }
@@ -7614,7 +7613,7 @@ span.h1 {
 /**/
      /*page_contribution_a*/
      .page_contribution_a .screentop_para{
-       margin: 50px 50px 50px 0;
+       margin: 50px 50px 0 50px;
        overflow: hidden;
        display: inline-block;
        position: relative;
@@ -7777,8 +7776,7 @@ span.h1 {
      }
      .page_contribution_a .img_wrap .left{
        width: 60%;
-       float: left;
-
+       float: right;
      }
      .page_contribution_a .img_wrap .right{
        width: 35%;
@@ -7927,14 +7925,14 @@ span.h1 {
 
      .page_contribution_1 .cont_right {
      width: 50%;
-     float: right;
+     float: left;
      height: 100%;
      position: relative;
      }
 
      .page_contribution_1 .cont_left {
      width: 50%;
-     float: left;
+     float: right;
      height: 100%;
      position: relative;
      }
@@ -7948,8 +7946,8 @@ span.h1 {
      -webkit-transform: translateY(-50%);
      -ms-transform: translateY(-50%);
      transform: translateY(-50%);
-     right: -100px;
-     padding: 30px 150px 30px 30px;
+     left: -100px;
+     padding: 30px 30px 30px 150px;
      z-index: 1;
      }
 
@@ -7957,11 +7955,11 @@ span.h1 {
      margin: 10px 0 0 0;
      font-size: 18px;
      line-height: 26px;
-     text-align: right;
+     text-align: left;
      }
 
      .page_contribution_1 .cont_right .screentop_para {
-     margin: 50px 50px 0 0;
+     margin: 50px 0 0 50px;
      font-size: 24px;
      }
 
@@ -7987,7 +7985,7 @@ span.h1 {
        z-index: 2;
        /* right: 0; */
        height: 30px;
-       left: -29px;
+       right: -29px;
        width: 300px;
      }
 
@@ -8015,7 +8013,7 @@ span.h1 {
 /**/
      /*page_creation_bod_a*/
      .page_creation_bod_a .screentop_para{
-       margin: 50px 50px 50px 0;
+       margin: 50px 0 50px 50px;
        overflow: hidden;
        display: inline-block;
        position: relative;
@@ -8183,7 +8181,7 @@ span.h1 {
      }
      .page_creation_bod_a .img_wrap .right{
        width: 35%;
-       float: right;
+       float: left;
      }
      .page_creation_bod_a .img_wrap img{
        width: 100%;
@@ -8219,7 +8217,7 @@ span.h1 {
      }
      .page_creation_bod_a .sp_wrap .content-wrapper .left{
        width: 50%;
-       float: left;
+       float: right;
        position: relative;
        min-height: 250px;
      }
@@ -8246,7 +8244,7 @@ span.h1 {
      }
      .page_creation_bod_a .sp_wrap .content-wrapper .right{
        width: 40%;
-       float: right;
+       float: left;
        position: relative;
        min-height: 250px;
      }
@@ -8276,7 +8274,7 @@ span.h1 {
      height: 60px;
      width: 80%;
      top: 50%;
-     right: 0;
+     left: 0;
      transform: translate(0,-100%);
    }
   /*page_creation_bod_a*/
@@ -8327,7 +8325,7 @@ span.h1 {
      font-family: "stc_light";
    }
    .page_investment .screentop_para{
-     margin: 50px 50px 50px 0;
+     margin: 50px 0 50px 50px;
      overflow: hidden;
      display: inline-block;
      position: relative;
@@ -8346,10 +8344,10 @@ span.h1 {
     }
    .page_investment .content-wrapper.c-row-reverse .left{
      width: 50%;
-     float: right;
+     float: left;
    }
    .page_investment .content-wrapper.c-row-reverse .left .box_center_content{
-     float: right;
+     float: left;
      width: 90%;
    }
    .page_investment .content-wrapper.c-row-reverse .right{
@@ -8361,14 +8359,14 @@ span.h1 {
    }
    .page_investment .content-wrapper .left{
      width: 50%;
-     float: left;
+     float: right;
      min-height: 250px;
    }
    .page_investment .content-wrapper .left .box_center_content{
        /*margin:0 auto;*/
        width: 80%;
        min-height: 400px;
-       float: left;
+       float: right;
    }
 
     .page_investment .content-wrapper .left .box_center_content p{
@@ -8387,7 +8385,7 @@ span.h1 {
    }
    .page_investment .content-wrapper .right{
      width: 40%;
-     float: right;
+     float: left;
      position: relative;
      min-height: 250px;
    }
@@ -8402,7 +8400,7 @@ span.h1 {
      margin-bottom: 50px;
   }
   .marginr50{
-   margin-right: 50px !important;
+   margin-left: 50px !important;
   }
 /**/
 
@@ -8614,7 +8612,7 @@ span.h1 {
       position: absolute;
       width: 500px;
       top: 100px;
-      left: 0;
+      right: 0;
       padding: 10px 0;
       z-index: 9;
       background: #4f0f8c;
@@ -8634,7 +8632,7 @@ span.h1 {
       width: 40px;
       height: 40px;
       top: -40px;
-      right: -40px;
+      left: -40px;
       background: url(../img/inner_open_cross.png) no-repeat;
       background-position: center bottom;
       transition: all .3s ease-out;
