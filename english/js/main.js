@@ -258,7 +258,7 @@ jQuery('document').ready(function(){
           // TweenMax.to('.short_menu', 1, {left: '-120px', ease: Power4.easeInOut})
         }
         else{
-          TweenMax.to('.short_menu', 1, {left: 0, ease: Power4.easeInOut})
+          TweenMax.to('.short_menu', 1, {right: 0, ease: Power4.easeInOut})
         }
 
         TweenMax.to('.short_menu ul li', 1, {background: '#FF375E', ease: Power4.easeInOut})
@@ -267,10 +267,10 @@ jQuery('document').ready(function(){
         
         TweenMax.staggerFromTo(`.menu_screen_wrapper .menu_items > div, .menu_screen_wrapper .menu_items > span`, 1.5, {opacity: 1, y: 0}, {opacity: 0, y: -100, ease: Power4.easeOut}, .1);
 
-        TweenMax.staggerFromTo(`.menu_screen_wrapper .swiper-slide .mask_layer`, 1.5, {opacity: 1, x: '100%'}, {opacity: 1, x: '0', ease: Power4.easeInOut, delay: 0}, .1);
+        TweenMax.staggerFromTo(`.menu_screen_wrapper .swiper-slide .mask_layer`, 1.5, {opacity: 1, x: '-100%'}, {opacity: 1, x: '0', ease: Power4.easeInOut, delay: 0}, .1);
 
         setTimeout(function(){
-          TweenMax.fromTo('.menu_screen_wrapper', .8, { left: 0, opacity: 1 }, { left: '-100%', opacity: 1, ease: Power4.easeInOut});
+          TweenMax.fromTo('.menu_screen_wrapper', .8, { left: 0, opacity: 1 }, { left: '100%', opacity: 1, ease: Power4.easeInOut});
         }, 700)
 
         menu_open = false;
@@ -287,10 +287,10 @@ jQuery('document').ready(function(){
 
         jQuery('.menu_screen_wrapper').toggleClass('reveal_mmenu');
         // jQuery('.menu_screen_wrapper').fadeIn('fast');
-        TweenMax.fromTo('.menu_screen_wrapper', 1, { left: '100%' }, { left: 0, ease: Power4.easeInOut});
+        TweenMax.fromTo('.menu_screen_wrapper', 1, { left: '-100%' }, { left: 0, ease: Power4.easeInOut});
         
-        TweenMax.staggerFromTo(`.menu_screen_wrapper .swiper-slide > img`, 2, {opacity: 1, x: '600', scale: 1}, {opacity: 1, x: '0', scale: 1, ease: Power4.easeOut}, 0, 0);
-        TweenMax.staggerFromTo(`.menu_screen_wrapper .swiper-slide .mask_layer`, 1.5, {opacity: 1, x: '0'}, {opacity: 1, x: '-100%', ease: Power4.easeInOut, delay: 0}, 0);
+        TweenMax.staggerFromTo(`.menu_screen_wrapper .swiper-slide > img`, 2, {opacity: 1, x: '-600', scale: 1}, {opacity: 1, x: '0', scale: 1, ease: Power4.easeOut}, 0, 0);
+        TweenMax.staggerFromTo(`.menu_screen_wrapper .swiper-slide .mask_layer`, 1.5, {opacity: 1, x: '0'}, {opacity: 1, x: '100%', ease: Power4.easeInOut, delay: 0}, 0);
 
         setTimeout(function(){
           TweenMax.staggerFromTo(`.menu_screen_wrapper .menu_items > div, .menu_screen_wrapper .menu_items > span`, 1.5, {opacity: 0, y: 100}, {opacity: 1, y: 0, ease: Power4.easeOut}, .1);
@@ -330,7 +330,6 @@ jQuery('document').ready(function(){
   var transition_complete = true;
   var total_landing_slide = jQuery('.landing_slider_wrapper .lslides').length;
 
-  // note, since direction is rtl in arabic, arrow right means previous slide
   jQuery('.nav_right').click(function(){
     if(transition_complete){
       transition_complete = false;
@@ -340,9 +339,9 @@ jQuery('document').ready(function(){
       }
       else{
         var tlx = new TimelineMax()
-        tlx.staggerFromTo('.landing_wipes1, .landing_wipes2, .landing_wipes3, .landing_wipes4, .landing_wipes5', .8, {left: '-100%'}, {left: 0, ease: Power4.easeInOut}, .1)
-        .to('.landing_wipes1, .landing_wipes2, .landing_wipes3, .landing_wipes4, .landing_wipes5', .5, {left: '100%', ease: Power4.easeInOut})
-        TweenMax.fromTo('.landing_wipes5 i', 3, { left: '10%', 'right': 'auto'}, { left: '100%', ease: Power4.easeInOut})
+        tlx.staggerFromTo('.landing_wipes1, .landing_wipes2, .landing_wipes3, .landing_wipes4, .landing_wipes5', .8, {left: '100%'}, {left: 0, ease: Power4.easeInOut}, .1)
+        .to('.landing_wipes1, .landing_wipes2, .landing_wipes3, .landing_wipes4, .landing_wipes5', .5, {left: '-100%', ease: Power4.easeInOut})
+        TweenMax.fromTo('.landing_wipes5 i', 3, { right: '10%', 'left': 'auto'}, { right: '100%', ease: Power4.easeInOut})
 
         current_slide--;
         
@@ -355,7 +354,7 @@ jQuery('document').ready(function(){
           jQuery('.landing_slider_wrapper .lslides').css({'display': 'none'})      
           jQuery(`.landing_slider_wrapper .lslides[landing-data-slide=${current_slide}]`).css({'display': 'block'})
 
-          TweenMax.from(jQuery(`.landing_slider_wrapper .lslides[landing-data-slide=${current_slide}]`), 1, {x: -500, 'clip-path': 'inset(0 100% 0 0)', scale: 1, opacity: 0, ease:Power3.easeNone})
+          TweenMax.from(jQuery(`.landing_slider_wrapper .lslides[landing-data-slide=${current_slide}]`), 1, {x: 500, scale: 1, opacity: 0, ease:Power3.easeNone})
 
           anim_landing();
           // anim_financial_main();
@@ -368,9 +367,7 @@ jQuery('document').ready(function(){
     }, 3000)
   })
 
-  // note, since direction is rtl in arabic, arrow left means next slide 
   jQuery('.nav_left').click(function(){
-    // alert(current_slide)
     if(transition_complete){
       transition_complete = false;
       if(current_slide>=total_landing_slide){
@@ -379,9 +376,9 @@ jQuery('document').ready(function(){
       }
       else{
         var tlx = new TimelineMax()
-        tlx.staggerFromTo('.landing_wipes1, .landing_wipes2, .landing_wipes3, .landing_wipes4, .landing_wipes5', .8, {left: '100%'}, {left: 0, ease: Power4.easeInOut}, .1)
-        .to('.landing_wipes1, .landing_wipes2, .landing_wipes3, .landing_wipes4, .landing_wipes5', .5, {left: '-100%', ease: Power4.easeInOut})
-        TweenMax.fromTo('.landing_wipes5 i', 3, { right: '10%', left: 'auto'}, { right: '100%', ease: Power4.easeInOut})
+        tlx.staggerFromTo('.landing_wipes1, .landing_wipes2, .landing_wipes3, .landing_wipes4, .landing_wipes5', .8, {left: '-100%'}, {left: 0, ease: Power4.easeInOut}, .1)
+        .to('.landing_wipes1, .landing_wipes2, .landing_wipes3, .landing_wipes4, .landing_wipes5', .5, {left: '100%', ease: Power4.easeInOut})
+        TweenMax.fromTo('.landing_wipes5 i', 3, { left: '10%', right: 'auto'}, { left: '100%', ease: Power4.easeInOut})
         
         current_slide++;
         
@@ -395,7 +392,7 @@ jQuery('document').ready(function(){
           jQuery('.landing_slider_wrapper .lslides').css({'display': 'none'})      
           jQuery(`.landing_slider_wrapper .lslides[landing-data-slide=${current_slide}]`).css({'display': 'block'})
 
-          TweenMax.from(jQuery(`.landing_slider_wrapper .lslides[landing-data-slide=${current_slide}]`), 1, {x: 500, 'clip-path': 'inset(0 0 0 100%)', scale: 1, opacity: 0, ease:Power3.easeNone})
+          TweenMax.from(jQuery(`.landing_slider_wrapper .lslides[landing-data-slide=${current_slide}]`), 1, {x: -500, scale: 1, opacity: 0, ease:Power3.easeNone})
 
           anim_landing();
           // anim_financial_main();

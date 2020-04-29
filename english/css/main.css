@@ -2506,7 +2506,7 @@ span.h1 {
   position: absolute;
   z-index: 10;
   top: 50%;
-  padding-right: 25px;
+  padding-left: 25px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -2526,7 +2526,7 @@ span.h1 {
 
 .menu_screen_wrapper .menu_items div {
   position: relative;
-  float: right;
+  float: left;
   clear: both;
   /*overflow: hidden;*/
 }
@@ -2555,7 +2555,7 @@ span.h1 {
 .menu_screen_wrapper .menu_items>span {
   position: absolute;
   top: 11px;
-  right: 0;
+  left: 0;
   width: 10px;
   height: 35px;
   background-color: #fff;
@@ -2574,7 +2574,7 @@ span.h1 {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: calc( 25% - 100px);
+  left: calc( 25% - 100px);
   z-index: 2;
   cursor: url(../img/icon_close.png), auto;
   display: none;
@@ -2597,7 +2597,7 @@ span.h1 {
   position: relative;
   display: block;
   /*width: 100%;*/
-  float: right;
+  float: left;
   clear: both;
   color: #fff;
   font-family: "stc_regular";
