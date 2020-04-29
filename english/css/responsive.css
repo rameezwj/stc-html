@@ -344,13 +344,13 @@
     .h1 {
       font-size: 30px !important;
       line-height: 45px !important;
-      padding-left: 50px !important;
+      padding-right: 50px !important;
     }
     .h1:not(.bk_pink) {
         /*padding-left: 0 !important;*/
     }
     .screentop_para {
-      margin: 100px 5% 30px 0 !important;
+      margin: 100px 0 30px 5% !important;
     }
 
     .ctable_wrapper {
@@ -390,7 +390,7 @@
       }
 
       .sub_menu_wrapper {
-          right: 20px !important;
+          left: 20px !important;
           width: 90%;
           height: 100%;
           padding: 100px 0;
@@ -427,7 +427,7 @@
 
       .page_consolidate_financials .snip_row .snip_txt {
           transform: unset;
-          float: left;
+          float: right;
           position: relative;
           margin: 0;
           margin-left: 0;
@@ -748,7 +748,7 @@
         display: inline-block;
         width: 30px;
         position: relative;
-        margin-left: 15px;
+        margin-right: 15px;
       }
       .page_values .value_item span {
           display: inline-block;
@@ -756,6 +756,7 @@
           width: auto;
           padding: 20px 0;
           margin: 0 0 0 10px;
+          float: left;
       }
 
       .page_values .value_item>div>div img {
@@ -767,13 +768,13 @@
 
     /*bottom navs*/
       a#btn_gotoNext_page {
-        padding-left: 60px;
+        padding-right: 60px;
         text-align: center;
         background-color: #ff375e;
       }
 
       a#btn_gotoPrev_page {
-        padding-right: 60px;
+        padding-left: 60px;
         text-align: center;
         background-color: #490f80;
       }
@@ -793,7 +794,7 @@
 
       .page_chairman .cont_left p {
           width: 90%;
-          right: 0;
+          left: 0;
           margin: 0 auto;
       }
 
@@ -876,7 +877,7 @@
 
       .page_ceo .cont_left p {
           width: 90%;
-          right: 0;
+          left: 0;
           font-size: 17px;
           margin: 0 auto;
           line-height: 26px;
@@ -931,6 +932,7 @@
           display: block;
           margin: 20px 0 0 0;
           padding: 30px 25px;
+          text-align: left;
       }
 
       .page_ceo .charimans_numbers .ch_num_left * {
@@ -952,8 +954,8 @@
           top: 0;
           right: auto;
           bottom: auto;
-          left: 0;
-          float: left;
+          right: 0;
+          float: right;
           position: relative;
       }
 
@@ -963,9 +965,9 @@
           top: 0;
           right: auto;
           bottom: auto;
-          left: 100px;
+          right: 100px;
           clear: both;
-          float: left;
+          float: right;
           position: relative;
       }
       .page_ceo .ceo_numbers .ch_num_left p {
@@ -1104,7 +1106,8 @@
           position: absolute !important;
           bottom: 300px;
           margin: 0 !important;
-          left: -130px !important;
+          left: auto !important;
+          right: -130px !important;
       }
     /*conclusion*/
 
@@ -2321,7 +2324,7 @@
 
       .mobile_landing_slider .page_highlights .high_text {
           position: relative;
-          right: auto;
+          left: auto;
           top: auto;
           transform: unset;
           width: 90%;
@@ -2348,13 +2351,13 @@
 
       .mobile_landing_slider .page_highlights .summary_btns_a img {
           width: 50%;
-          float: right;
+          float: left;
       }
 
       .mobile_landing_slider .page_highlights .summary_btns_a .summary_btns {
-          left: 50%;
+          right: 50%;
           background: #a54ee1;
-          margin-left: -35px;
+          margin-right: -35px;
       }
 
       .mobile_landing_slider .page_highlights .s4_wrap .right .s4 {
@@ -2372,7 +2375,7 @@
 
       .mobile_landing_slider .page_highlights .high_text i {
           position: absolute;
-          left: 0;
+          right: 0;
           float: none;
           padding: 10px 5px 0 5px;
           top: -65px;
@@ -2381,7 +2384,7 @@
       .mobile_landing_slider .page_highlights .s1 {
           position: relative;
           top: auto;
-          right: auto;
+          left: auto;
           width: 100%;
       }
 
@@ -2389,14 +2392,14 @@
           position: relative;
           top: auto;
           width: 100%;
-          left: auto;
+          right: auto;
       }
 
       .mobile_landing_slider .page_highlights .summary_btns_b .summary_btns {
           top: auto;
           right: auto;
           bottom: 150px;
-          left: 0;
+          right: 0;
           width: 60%;
       }
     /*page highlights | main slide*/
